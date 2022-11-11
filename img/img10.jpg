@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://www.serviciosarquitectonicos.com/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" class="pointer skrollr skrollr-desktop"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style id="customRules"></style><script async="" src="./img10_files/sp-2.0.0-dm-0.1.min.js.descarga"></script><script type="text/javascript">
+    window._currentDevice = 'desktop';
+    window.Parameters = window.Parameters || {
+        AjaxContainer: 'div.dmBody',
+        WrappingContainer: 'div.dmOuter',
+        HomeUrl: 'https://www.serviciosarquitectonicos.com/',
+        AccountUUID: '06bcd866923d4c9ab1428ffbf7681370',
+        SystemID: 'US_DIRECT_PRODUCTION',
+        SiteAlias: '91e4550b',
+        SiteType: atob('RFVEQU9ORQ=='),
+        PublicationDate: 'Wed Oct 28 15:33:45 UTC 2020',
+        ExternalUid: null,
+        IsSiteMultilingual: false,
+        InitialPostAlias: '',
+        InitialDynamicItem: '',
+        InitialPageAlias: 'home',
+        InitialPageUuid: '6ff71e4e46714d17b268e8c6b04444ba',
+        InitialEncodedPageAlias: 'aG9tZQ==',
+        CurrentPageUrl: '',
+        IsCurrentHomePage: true,
+        AllowAjax: false,
+        AfterAjaxCommand: null,
+        HomeLinkText: 'Back To Home',
+        UseGalleryModule: false,
+        CurrentThemeName: 'Layout Theme',
+        ThemeVersion: '1735',
+        DefaultPageAlias: '',
+        RemoveDID: true,
+        WidgetStyleID: null,
+        IsHeaderFixed: false,
+        IsHeaderSkinny: false,
+        IsBfs: true,
+        StorePageAlias: 'null',
+        StorePagesUrls: 'e30=',
+        IsNewStore: 'false',
+        StorePath: '',
+        StoreId: 'null',
+        StoreVersion: 0,
+        StoreBaseUrl: '',
+        StoreCleanUrl: true,
+        StoreDisableScrolling: true,
+        IsStoreSuspended: false,
+        NotificationSubDomain: 'serviciosarquitectonicos',
+        HasCustomDomain: true,
+        showCookieNotification: false,
+        cookiesNotificationMarkup: 'null',
+        translatedPageUrl: '',
+        isFastMigrationSite: false,
+        sidebarPosition: 'LEFT',
+        currentLanguage: 'es',
+        NavItems: '{}',
+        errors: {
+            general: 'There was an error connecting to the page.<br/> Make sure you are not offline.',
+            password: 'Incorrect name/password combination',
+            tryAgain: 'Try again'
+        },
+        NavigationAreaParams: {
+            ShowBackToHomeOnInnerPages: true,
+            NavbarSize: 5,
+            NavbarLiveHomePage: 'https://www.serviciosarquitectonicos.com/',
+            BlockContainerSelector: '.dmBody',
+            NavbarSelector: '#dmNav:has(a)',
+            SubNavbarSelector: '#subnav_main'
+        },
+        hasCustomCode: false,
+        planID: '7',
+        customTemplateId: 'null',
+        siteTemplateId: 'null',
+        productId: 'DM_DIRECT',
+        disableTracking: false,
+        pageType: 'FROM_SCRATCH',
+        isRuntimeServer: true,
+        siteInfo: null,
+    };
+
+    window.Parameters.LayoutID = {};
+    window.Parameters.LayoutID[window._currentDevice] = 23;
+    window.Parameters.LayoutVariationID = {};
+    window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Injecting site-wide to the head -->
+
+
+
+
+<!-- End Injecting site-wide to the head -->
+
+<!-- Inject secured cdn script -->
+
+
+<!-- ========= Meta Tags ========= -->
+<!-- PWA settings -->
+<script>
+    function toHash(str) {
+        var hash = 5381, i = str.length;
+        while (i) {
+            hash = hash * 33 ^ str.charCodeAt(--i)
+        }
+        return hash >>> 0
+    }
+</script>
+<script>
+    (function (global) {
+    //const cacheKey = global.cacheKey;
+    const isOffline = 'onLine' in navigator && navigator.onLine === false;
+    const hasServiceWorkerSupport = 'serviceWorker' in navigator;
+    if (isOffline) {
+        console.log('offline mode');
+    }
+    if (!hasServiceWorkerSupport) {
+        console.log('service worker is not supported');
+    }
+    if (hasServiceWorkerSupport && !isOffline) {
+        window.addEventListener('load', function () {
+            const serviceWorkerPath = '/runtime-service-worker.js?v=3';
+            navigator.serviceWorker
+                .register(serviceWorkerPath, { scope: './' })
+                .then(
+                    function (registration) {
+                        // Registration was successful
+                        console.log(
+                            'ServiceWorker registration successful with scope: ',
+                            registration.scope
+                        );
+                    },
+                    function (err) {
+                        // registration failed :(
+                        console.log('ServiceWorker registration failed: ', err);
+                    }
+                )
+                .catch(function (err) {
+                    console.log(err);
+                });
+        });
+
+        // helper function to refresh the page
+        var refreshPage = (function () {
+            var refreshing;
+            return function () {
+                if (refreshing) return;
+                // prevent multiple refreshes
+                var refreshkey = 'refreshed' + location.href;
+                var prevRefresh = localStorage.getItem(refreshkey);
+                if (prevRefresh) {
+                    localStorage.removeItem(refreshkey);
+                    if (Date.now() - prevRefresh < 30000) {
+                        return; // dont go into a refresh loop
+                    }
+                }
+                refreshing = true;
+                localStorage.setItem(refreshkey, Date.now());
+                console.log('refereshing page');
+                window.location.reload();
+            };
+        })();
+
+        function messageServiceWorker(data) {
+            return new Promise(function (resolve, reject) {
+                if (navigator.serviceWorker.controller) {
+                    var worker = navigator.serviceWorker.controller;
+                    var messageChannel = new MessageChannel();
+                    messageChannel.port1.onmessage = replyHandler;
+                    worker.postMessage(data, [messageChannel.port2]);
+                    function replyHandler(event) {
+                        resolve(event.data);
+                    }
+                } else {
+                    resolve();
+                }
+            });
+        }
+    }
+})(window);
+</script>
+<!-- Add manifest -->
+<!-- End PWA settings -->
+
+
+
+
+
+<link rel="canonical" href="https://www.serviciosarquitectonicos.com/">
+
+<meta id="view" name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!--Add favorites icons-->
+
+<link rel="apple-touch-icon" href="https://irp-cdn.multiscreensite.com/91e4550b/dms3rep/multi/IU2.jpg">
+
+<link rel="icon" type="image/x-icon" href="https://static.cdn-website.com/runtime/favicon_d1_res.ico">
+
+<!-- End favorite icons -->
+
+<link rel="preconnect" href="https://lirp.cdn-website.com/" crossorigin="">
+
+
+
+<!-- render the required CSS and JS in the head section -->
+<script>
+    window.SystemID = 'US_DIRECT_PRODUCTION';
+
+    if(!window.dmAPI) {
+        window.dmAPI = {
+            registerExternalRuntimeComponent: function() {
+            },
+            getCurrentDeviceType: function() {
+                return window._currentDevice;
+            }
+        };
+    }
+
+    if (!window.requestIdleCallback) {
+        window.requestIdleCallback = function (fn) {
+            setTimeout(fn, 0);
+        }
+    }
+</script>
+<!-- loadCSS function -->
+<script>
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+
+  function checkCss() {
+    if (cssLinks && cssLinks.runtime && cssLinks.global) {
+      loadCssLink(cssLinks.runtime);
+      loadCssLink(cssLinks.global);
+      cssLinks = null;
+    }
+  }
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      /* Never fail - this is just a tool for measurements */
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+<script data-role="deferred-init" type="text/javascript">
+    /* usage: window.getDeferred(<deferred name>).resolve() or window.getDeferred(<deferred name>).promise.then(...)*/
+    function Def(){this.promise=new Promise((function(a,b){this.resolve=a,this.reject=b}).bind(this))}
+    const defs={};
+    window.getDeferred=function(a){return null==defs[a]&&(defs[a]=new Def),defs[a]}
+    window.waitForDeferred = function (b, a, c) {
+      let d = window?.getDeferred?.(b);
+      d
+        ? d.promise.then(a)
+        : c && ["complete", "interactive"].includes(document.readyState)
+        ? setTimeout(a, 1)
+        : c
+        ? document.addEventListener("DOMContentLoaded", a)
+        : console.error(`Deferred  does not exist`);
+    };
+</script>
+<style id="forceCssIncludes">
+    /* This file is auto-generated from a `scss` file with the same name */
+
+.videobgwrapper{overflow:hidden;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;pointer-events:none;border-radius:inherit}.videobgframe{position:absolute;width:101%;height:100%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);object-fit:fill}#dm video.videobgframe{margin:0}.dmMobileBody .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}.dmDesktopBody .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}#dm [data-show-on-page-only]{display:none!important}
+</style>
+
+
+
+<style id="hideAnimFix">
+  .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+    visibility: hidden;
+  }
+  .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+    visibility: hidden !important;
+  }
+</style>
+
+
+
+<style id="criticalCss">
+    @charset "UTF-8";@font-face{font-family:Roboto;font-style:normal;font-weight:400;font-display:swap;src:local('Roboto'),local('Roboto-Regular'),url(https://irp.cdn-website.com/fonts/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap}@font-face{font-family:Roboto;font-style:normal;font-weight:500;font-display:swap;src:local('Roboto Medium'),local('Roboto-Medium'),url(https://irp.cdn-website.com/fonts/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap}@font-face{font-family:Roboto;font-style:normal;font-weight:700;font-display:swap;src:local('Roboto Bold'),local('Roboto-Bold'),url(https://irp.cdn-website.com/fonts/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap}#dm div.dmContent [class*=' icon-'],[class*=' icon-']{font-family:FontAwesome!important;font-weight:400;font-style:normal;text-decoration:inherit;-webkit-font-smoothing:antialiased}[class*=' icon-']:before{text-decoration:none;display:inline-block;speak:none}a [class*=' icon-']{display:inline}[class*=' icon-']{display:inline;width:auto;height:auto;line-height:normal;vertical-align:baseline;background-image:none;background-position:0 0;background-repeat:repeat;margin-top:0}.icon-phone:before{content:'\f095'}.icon-angle-down:before{content:'\f107'}[class*=' dm-common-icons-'],[class*=' dm-social-icons-']{font-family:dm-social-icons!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.dm-social-icons-whatsapp:before{content:'\e904'}.dm-social-icons-email:before{content:'\eace'}[class*=' dm-common-icons-']{font-family:dm-common-icons!important}.dm-common-icons-close:before{content:'\e901'}.dmInner{min-height:100vh!important;position:relative}.dmPopup,.dmPopupMask{position:fixed;left:0}[dmtemplateid*=amburger] .dmLayoutWrapper{overflow:hidden}#dm .dmWidget .icon{font-size:26px}body:not(.noFontIcons) #dm .dmOuter .dmInner .dmWidget .icon.hasFontIcon{height:26px;margin-top:-13px;line-height:normal;text-align:center;background-image:none}.supportsFontIcons .hasFontIcon{background-image:none!important}.dmPopupMask{margin:0;display:none;width:10px;z-index:1000000999;top:0}#dmRoot .dmPopup{display:block}.dmPopup{padding:10px;text-align:left;margin:0 10px;top:10px;width:93%;z-index:1000009999!important;box-sizing:border-box;background:#f5f5f5;overflow-y:auto;height:100%;display:block}.dmPopup .dmPopupTitle{text-align:left;font:700 19px Helvetica,Arial;margin:20px 20px 35px;color:#999}.lh-1,button{line-height:normal}#dmPopup{opacity:0}.dmPopupClose,.dmPopupClose:before{position:absolute;visibility:visible}.dmPopupClose{border-radius:25px;width:27px;height:27px;z-index:1;background-color:rgba(255,255,255,.4);top:12px;right:12px}.dmPopupClose:before{display:block;font-size:20px;color:#000;top:3px;right:3px}body.dmDesktopBody:not(.mac) .data::-webkit-scrollbar{width:5px;height:5px}body.dmDesktopBody:not(.mac) .data::-webkit-scrollbar-track{background:rgba(0,0,0,.1)}body.dmDesktopBody:not(.mac) .data::-webkit-scrollbar-thumb{background:#c8c8c8;box-shadow:inset 0 1px 2px #454545;border-radius:45px}.dmRespRow.fullBleedMode>.dmRespColsWrapper{width:100%!important;max-width:100%!important}.dmRespRow.fullBleedMode{padding-left:0!important;padding-right:0!important}#dm .dmRespRow .dmRespColsWrapper{display:-webkit-flex;display:flex}.pswp{display:none;z-index:9999999999!important}#dm .hasBackgroundOverlay:not(.dmPopupPage):not(.layout-drawer){position:relative!important}#dm .hasBackgroundOverlay:not(.hasExtraLayerOverlay):before{display:block!important;position:absolute!important;top:0!important;left:0!important;width:100%!important;height:100%!important;content:' '!important}.graphicWidget{width:200px;height:200px;margin:10px auto;text-align:center}.graphicWidget svg.svg{width:100%;height:100%;color:#000;fill:#000}.align-center{margin-left:auto;margin-right:auto}.text-align-center{text-align:center}body.fix-mobile-scrolling{overflow:initial}#dmRoot{text-decoration-skip-ink:none}body{-webkit-overflow-scrolling:touch}:not(.runtime-module-container) .layout-drawer,:not(.runtime-module-container) .layout-drawer-hamburger,:not(.runtime-module-container) .layout-drawer-overlay{visibility:hidden}:not(.runtime-module-container) .layout-drawer{position:fixed;-webkit-transform:translate(-100%,-100%);transform:translate(-100%,-100%)}:not(.runtime-module-container) .layout-drawer[data-origin=side-reverse]{-webkit-transform:translate(100%,0);transform:translate(100%,0)}:not(.runtime-module-container) .layout-drawer-overlay{opacity:0}.runtime-module-container{width:100%}.runtime-module-container[dmtemplateid*=amburger] #site_content,.runtime-module-container[dmtemplateid*=amburger] .dmInner{position:static}.runtime-module-container[dmtemplateid*=amburger] #site_content .site_content{position:relative}.runtime-module-container[dmtemplateid*=amburger] .dmLayoutWrapper{background-color:transparent}.runtime-module-container .hamburger-header-container{position:fixed;z-index:2;top:0;left:0;width:100%}.runtime-module-container .hamburger-header-container .hamburger-header{min-height:43px}.runtime-module-container .layout-drawer,.runtime-module-container .layout-drawer-hamburger,.runtime-module-container .layout-drawer-overlay{visibility:visible}.runtime-module-container[dmtemplateid*=amburger] .site_content{margin-top:59px}.runtime-module-container .layout-drawer-hamburger{position:fixed;left:10px;margin-left:env(safe-area-inset-left);padding:13px 9px;z-index:7;width:40px;height:40px;background-color:transparent;color:#787878;display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;border:0;-webkit-justify-content:space-between;justify-content:space-between;-webkit-align-items:stretch;align-items:stretch;outline:0;top:10px;border-radius:0}.dmDesktopBody .runtime-module-container .layout-drawer-hamburger .hamburger__slice,.runtime-module-container .layout-drawer-hamburger .hamburger__slice{display:block;height:0;width:100%;border:1px solid currentColor;-webkit-transform-origin:center;transform-origin:center}.dmDesktopBody .runtime-module-container .layout-drawer-hamburger{position:fixed;left:18px;margin-left:env(safe-area-inset-left);padding:17px 11px;z-index:7;width:52px;height:52px;background-color:transparent;color:#787878;display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;border:0;-webkit-justify-content:space-between;justify-content:space-between;-webkit-align-items:stretch;align-items:stretch;outline:0;top:18px;border-radius:0}.runtime-module-container.hamburger-reverse .layout-drawer-hamburger{left:auto;right:10px;margin-right:env(safe-area-inset-right)}.dmDesktopBody .runtime-module-container.hamburger-reverse .layout-drawer-hamburger{right:18px}.runtime-module-container .layout-drawer,.runtime-module-container .layout-drawer-overlay{height:100%;position:fixed;top:0;left:0}.runtime-module-container .layout-drawer{background-color:#fff;width:75vw;-webkit-transform:translate(-100%,0);transform:translate(-100%,0);overflow:auto;-webkit-overflow-scrolling:auto;z-index:7;display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column}.runtime-module-container .layout-drawer .dmRespRow:not(:first-of-type):not(:last-of-type){-webkit-flex:1 1 auto;flex:1 1 auto}.runtime-module-container .layout-drawer .dmRespRow:not(.dmPlaceHolderRespRow) .dmRespColsWrapper .dmRespCol:not(.content-removed):only-child:empty{min-height:0}.runtime-module-container .layout-drawer[data-origin=side-reverse]{-webkit-transform:translate(100%,0);transform:translate(100%,0);left:auto;right:0}.runtime-module-container .layout-drawer-overlay{width:100vw;background-color:rgba(0,0,0,.4);opacity:0;z-index:6}#dm-outer-wrapper #hamburger-header-container #hamburger-header .dmRespCol{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;-webkit-justify-content:center;justify-content:center}nav{display:block}html{font-family:Source Sans Pro;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}h1{font-size:2em;margin:.67em 0}b{font-weight:700}svg:not(:root){overflow:hidden}button{font-family:inherit;font-size:100%;margin:0;text-transform:none;-webkit-appearance:button}button::-moz-focus-inner{border:0;padding:0}*,:after,:before{box-sizing:border-box}.dmRespRow{padding-top:15px;padding-bottom:15px}.dmRespRow .dmRespRow:after,.dmRespRow .dmRespRow:before,.dmRespRow:after,.dmRespRow:before{content:' ';display:table}.dmRespRow .dmRespRow:after,.dmRespRow:after{clear:both}.dmRespRow,.dmRespRow .dmRespColsWrapper{max-width:960px;position:relative;margin:0 auto;width:100%}@media screen and (min-width:1200px){.rows-1200 .dmRespRow:not(.fullBleedMode) .dmRespColsWrapper{max-width:1200px}}.dmRespRow .dmRespCol{position:relative;width:100%;display:inline-block;vertical-align:top;float:left}.dmRespRow .dmRespCol>*{max-width:100%}.dmRespRow .dmRespRow{width:auto;margin-top:0;margin-bottom:0;max-width:none}.dmDesktopBody .dmRespRow .large-4{position:relative;width:33.33333%}.dmDesktopBody .dmRespRow .large-12{position:relative;width:100%}#dm .dmRespRow .dmRespCol>.dmWidget{overflow:initial}.dmLargeBody #dm .dmRespRow .dmRespCol>.dmWidget{width:280px;max-width:100%}#dm .dmInner .dmWidget:not(.displayNone){display:inline-block}#dm .dmInner .dmWidget{text-decoration:none;margin:10px 0;clear:both;position:relative;text-align:center;line-height:22px;box-shadow:none;background-image:none;padding:0 0 0 40px;height:auto;border:0;white-space:nowrap}#dm .dmInner .dmWidget:after{content:'';display:inline-block;height:100%;vertical-align:middle;width:0;margin-right:-.25em}#dm .dmInner .dmWidget .iconBg{position:absolute;left:0;width:50px;top:50%;margin-top:-13px}#dm .dmWidget .text{display:inline-block;vertical-align:middle;font-size:1.125em;line-height:normal;white-space:normal;padding:10px 7px;max-width:98%}#dm [data-buttonstyle=BORDER_SHORT] .dmWidget:not([data-buttonstyle]){overflow:initial;background-clip:border-box;border:1px solid;padding:0}#dm [data-buttonstyle=BORDER_SHORT] .dmWidget:not([data-buttonstyle]) .iconBg{display:none}#dmRoot #dm [data-buttonstyle=BORDER_SHORT] .dmInner .dmWidget:not([data-buttonstyle]) .text{padding:16px 0}.dmLargeBody #dm [data-buttonstyle=BORDER_SHORT] .dmRespRow .dmRespCol>.dmWidget{width:222px}.dmInner{min-width:768px!important;font-size:16px;background:#fff;color:#666}.dmNewParagraph[data-version]{line-height:initial}.dmNewParagraph[data-version] p{margin-top:0;margin-bottom:0}#dm .socialHubInnerDiv a:not(:last-child){margin-right:5px}*{border:0 solid #333;scrollbar-arrow-color:#fff;scrollbar-track-color:#F2F2F2;scrollbar-face-color:silver;scrollbar-highlight-color:silver;scrollbar-3dlight-color:silver;scrollbar-shadow-color:silver;scrollbar-darkshadow-color:silver;scrollbar-width:12px}body{width:100%;overflow:hidden;-webkit-text-size-adjust:100%!important;-ms-text-size-adjust:100%!important}h1,ul{margin-left:0;margin-right:0}.dmInner *{-webkit-font-smoothing:antialiased}span.oneIcon:before{display:inline-block}a,li,ul{vertical-align:top}#site_content{position:relative}.dmOuter{word-wrap:break-word}.dmDesktopBody .dmInner{min-width:960px}.dmInner a{color:#463939;outline:0;vertical-align:inherit}.dmInner ul:not(.defaultList){padding:0}DIV.dmBody{padding:0;clear:both}.dmContent{margin:0;padding:0}#site_content ul:not(.defaultList){-webkit-padding-start:0;-moz-padding-start:0;list-style-position:inside}.dmRespRowsWrapper{max-width:960px;margin:0 auto}.dmRespCol>[dmle_extension]:not(:first-child){margin-top:10px}#dm .dmRespColsWrapper{display:block}.dmNewParagraph{text-align:left;margin:8px 0;padding:2px 0}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol{padding-left:.75%;padding-right:.75%}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol:first-child{padding-left:0;padding-right:1.5%}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol:last-child{padding-right:0;padding-left:1.5%}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol:only-child{padding-left:0;padding-right:0}.dmLinksMenu>ul{display:block;margin:0;font-size:inherit}.dmReadySection .dmNewParagraph{margin:0}#dm .dmInner .dmReadySection .dmWidget:not(.displayNone){display:block;margin:10px auto}.dmSmartSection .dmNewParagraph{margin:20px 0 24px}.dmSmartSection .dmRespCol>.dmNewParagraph:first-child{margin:0 0 20px}#dm .nearbyTitleCallSection{text-align:center;padding-top:80px;padding-bottom:80px;background-position:50%;background-size:cover;background-repeat:no-repeat;background-image:url(https://dd-cdn.multiscreensite.com/themes/sections/click2Call.jpg);color:#fff}#dm .dmBody div.u_1620625865,a span.socialHubIcon{background-image:none!important}#dm .nearbyTitleCallSection *{text-align:center}.dmSmartSection.dmRespRow{text-align:left}#dm .dmInner .dmWidget{color:#f7f7f7;background-color:#68ccd1}.dmSocialHub{clear:both}#dm .dmSocialHub a{display:inline-block;text-decoration:none;margin:0;vertical-align:bottom}.dmSocialHub>div{text-align:inherit}a span.socialHubIcon{width:36px;height:36px;font-size:31px;display:inline-block;text-align:center;margin-right:0;margin-bottom:5px;line-height:36px;box-sizing:content-box}.socialHubIcon.style8{font-size:24px;padding:4px;border-radius:50%;color:#fff;background:#000}#dm .dmSocialHub .socialHubWrapper{display:inline-block;max-width:100%}body{background-color:#eee}#dm [data-buttonstyle] .dmWidget span.iconBg,#dm [data-buttonstyle] .dmWidget span.text{color:#f7f7f7}.main-navigation.unifiednav{display:flex;justify-content:flex-start;align-items:stretch;overflow:visible}.main-navigation.unifiednav ul{list-style:none;padding:0;margin:0;font-size:1rem}.main-navigation.unifiednav .unifiednav__container{display:flex;justify-content:flex-start;list-style:none}.main-navigation.unifiednav .unifiednav__container>.unifiednav__item-wrap{display:flex;justify-content:flex-start;position:relative;font-weight:400}.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap::after,.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap::before{content:'';align-self:center;font-weight:700}.main-navigation.unifiednav .unifiednav__container>.unifiednav__item-wrap>.unifiednav__item{display:flex;justify-content:flex-start;align-items:center;flex-direction:row;color:inherit;text-decoration:none;position:relative;padding:12px 15px;margin:0;font-weight:inherit;letter-spacing:.03em}.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{padding:0 15px}.main-navigation.unifiednav .unifiednav__container>.unifiednav__item-wrap>.unifiednav__item .nav-item-text{white-space:nowrap}.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::after,.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::before{content:'';width:100%;height:0;border:0 solid transparent;border-top-color:currentColor;display:block;opacity:0}#dm [data-buttonstyle] div.dmInner #site_content .dmWidget .iconBg,.main-navigation.unifiednav .unifiednav__container .unifiednav__item:not(.unifiednav__item_has-sub-nav) .icon{display:none}.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item.dmNavItemSelected .nav-item-text::after,.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item.dmNavItemSelected .nav-item-text::before{opacity:1}.main-navigation.unifiednav.effect-bottom{padding:calc(12px - .2em - 2px) 15px}.main-navigation.unifiednav.effect-bottom .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::after,.main-navigation.unifiednav.effect-bottom .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::before{transform:scaleX(0);border-top-width:2px}.main-navigation.unifiednav.effect-bottom .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::after{margin-top:.2em}.main-navigation.unifiednav.effect-bottom .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::before{margin-bottom:.2em;border-top-color:transparent}.main-navigation.unifiednav.effect-bottom .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item.dmNavItemSelected .nav-item-text::after,.main-navigation.unifiednav.effect-bottom .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item.dmNavItemSelected .nav-item-text::before{transform:scaleX(1)}.main-navigation.unifiednav:not(.unifiednav_vertical)>.unifiednav__container{justify-content:inherit}#dm .p_hfcontainer nav.main-navigation.unifiednav{min-width:9em!important;text-align:initial!important}#dm .main-navigation.unifiednav[data-nav-structure=VERTICAL] .unifiednav__container{flex-direction:column;flex:1 1 100%}#dm .main-navigation.unifiednav[data-nav-structure=VERTICAL] .unifiednav__container>.unifiednav__item-wrap>.unifiednav__item{padding:8px 0;margin:0}#dm .main-navigation.unifiednav[data-nav-structure=VERTICAL] .unifiednav__container>.unifiednav__item-wrap>.unifiednav__item .nav-item-text{white-space:initial}#dm .main-navigation.unifiednav[data-nav-structure=VERTICAL] .unifiednav__container:not([data-depth])>.unifiednav__item-wrap{flex-direction:column}#dm .main-navigation.unifiednav[data-nav-structure=VERTICAL] .unifiednav__container:not([data-depth])>.unifiednav__item-wrap::after{content:''!important;width:100%;height:0;color:#d1d1d1;align-self:flex-start;border:0 solid currentColor}#dm .main-navigation.unifiednav[data-nav-structure=VERTICAL][layout-main=vertical_nav_layout_2] .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{padding:5px 0}#dm .main-navigation.unifiednav[data-nav-structure=VERTICAL][data-show-vertical-sub-items=HIDE]>.unifiednav__container:not([data-depth])>.unifiednav__item-wrap .unifiednav__item.dmNavItemSelected>.nav-item-text .icon::before{transform:rotate(180deg)}#dm .dmBody .dmRespRowsWrapper{max-width:none;background-color:transparent}.dmLargeBody .dmRespRow{width:100%;max-width:none;margin-left:0;margin-right:0;padding-left:40px;padding-right:40px}.dm-bfs.dm-layout-home div.dmInner{background-color:#fff}.dmRespRow:not(.dmPlaceHolderRespRow) .dmRespColsWrapper .dmRespCol:not(.content-removed):only-child:empty{min-height:100px!important}.dmRespRow:not(.dmPlaceHolderRespRow) .dmRespColsWrapper .dmRespCol:not(.content-removed).empty-column{min-height:100px}.dmRespRow:not(.dmPlaceHolderRespRow) .dmRespCol:not(.content-removed).empty-column,.dmRespRow:not(.dmPlaceHolderRespRow) .dmRespCol:not(.content-removed):empty{min-height:1px}.dmRespRow:not(.dmPlaceHolderRespRow) .dmRespColsWrapper .dmRespCol:not(.content-removed):only-child.empty-column{min-height:100px}#dm div.dmContent h1{color:#666}#dm div.dmRespCol>*{line-height:normal}#dm [data-buttonstyle] div.dmInner .dmWidget{-webkit-box-shadow:none;box-shadow:none;-moz-box-shadow:none;border-color:#f7f7f7;border-width:0;border-style:solid}#dm [data-buttonstyle] div.dmInner .dmWidget span.text{color:#fff}#dm div.dmContent h1{font-family:Roboto;color:rgba(51,51,51,1);font-weight:700;text-decoration:none;font-style:normal;direction:ltr}#dm div.dmInner,#dm div.dmInner .dmRespCol{color:#505050;font-family:Muli;font-weight:300;font-style:normal;font-size:16px}#dm .dmNewParagraph,#dm h1{direction:ltr;text-align:left}#dm [data-buttonstyle] div.dmInner #site_content .dmWidget{border-radius:0;-webkit-border-radius:0;-moz-border-radius:0;background-color:rgba(0,0,0,0);border-width:1px;border-style:solid;text-align:CENTER;border-color:transparent}#dm [data-buttonstyle] div.dmInner #site_content .dmWidget span.text{color:rgba(105,105,105,1);font-family:Roboto;text-decoration:underline;font-weight:700}#dm .dmContent .dmRespRow{background-color:rgba(0,0,0,0);padding-right:30px;padding-left:30px}.dmLargeBody .dmBody .dmRespRowsWrapper{background-color:transparent}#dm DIV.dmOuter DIV.dmInner{background-color:rgba(255,255,255,1);background-image:none;background-size:contain;background-repeat:no-repeat;background-attachment:fixed;background-position:50% 50%}#dm div.dmContent h1{font-size:60px}#dm [data-buttonstyle] div.dmInner #site_content .dmWidget span.text,#dm div.dmInner,#dm div.dmInner .dmRespCol{font-size:16px}#dm .p_hfcontainer .main-navigation.unifiednav:not(.unifiednav_vertical) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::after,#dm .p_hfcontainer .main-navigation.unifiednav:not(.unifiednav_vertical) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::before{font-size:12px!important}#dm .p_hfcontainer div.u_1686406197,#dm .p_hfcontainer div.u_1976198127{background-color:rgba(255,255,255,1)!important}#dm .p_hfcontainer nav.u_1761561231{color:#fff!important}#dm .p_hfcontainer div.u_1588226381 .socialHubIcon{background-color:rgba(255,255,255,1)!important;color:rgba(39,42,47,1)!important;border-color:rgba(39,42,47,1)!important}#dm .p_hfcontainer nav.u_1761561231.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item.dmNavItemSelected{color:rgba(255,255,255,1)!important;font-weight:400!important}#dm .p_hfcontainer nav.u_1761561231.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{color:rgba(255,255,255,.5)!important;font-weight:400!important}#dm .p_hfcontainer .u_1761561231.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{justify-content:flex-start!important;text-align:left!important;padding-top:12px!important;padding-bottom:12px!important}#dm .p_hfcontainer .u_1761561231.main-navigation.unifiednav[data-nav-structure=VERTICAL] .unifiednav__container:not([data-depth])>.unifiednav__item-wrap::after{align-self:flex-start!important}#dm .p_hfcontainer div.u_1227253539{background-image:url(https://lirp-cdn.multiscreensite.com/91e4550b/dms3rep/multi/opt/IU2-1920w.jpg)!important}@media all and (min-width:1920px),all and (-webkit-min-device-pixel-ratio:1.5),all and (min--moz-device-pixel-ratio:1.5),all and (min-device-pixel-ratio:1.5){#dm .p_hfcontainer div.u_1227253539{background-repeat:no-repeat!important;background-image:url(https://lirp-cdn.multiscreensite.com/91e4550b/dms3rep/multi/opt/IU2-2880w.jpg)!important;background-size:cover!important}}[dmtemplateid=Hamburger] .layout-drawer-hamburger.hamburger-on-header{color:rgba(0,0,0,1)!important;background-color:rgba(0,0,0,0)!important}#dm .p_hfcontainer div#hamburger-header{background-color:rgba(0,0,0,0)!important;box-shadow:none!important;-moz-box-shadow:none!important;-webkit-box-shadow:none!important;padding-top:0!important}#dm .p_hfcontainer div#hamburger-drawer.layout-drawer{background-color:rgba(39,42,47,1)!important}#dm .p_hfcontainer .u_1588226381 .socialHubInnerDiv a{margin-right:14px!important}#dm .p_hfcontainer .u_1588226381 .socialHubIcon{width:30px!important;height:30px!important;font-size:20px!important;line-height:30px!important}#dm .p_hfcontainer .u_1588226381 .socialHubIcon:after{width:38px!important;height:30px!important}#dm .p_hfcontainer div.u_1325509788{padding:0!important;margin:0!important}#dm .p_hfcontainer nav.u_1761561231.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{font-size:24px!important}#dm .p_hfcontainer div.u_1959364221{margin-top:0!important;padding:0!important}#dm .p_hfcontainer div.u_1123203910,#dm .p_hfcontainer div.u_1834893332{top:0!important;width:100%!important;position:relative!important;height:auto!important;text-align:left!important;padding:2px 0!important;float:none!important;left:0!important;display:block!important}#dm .p_hfcontainer div.u_1834893332{max-width:100%!important;min-width:0!important;margin:0 auto 8px 0!important}#dm .p_hfcontainer div.u_1123203910{max-width:calc(100% - 0px)!important;min-width:25px!important;margin:16px auto 8px!important}#dm .p_hfcontainer div.u_1588226381,#dm .p_hfcontainer nav.u_1761561231{max-width:calc(100% - 0px)!important;min-width:25px!important;padding:0!important;top:0!important;position:relative!important;height:auto!important}#dm .p_hfcontainer nav.u_1761561231{float:none!important;left:0!important;width:892.99px!important;justify-content:flex-start!important;align-items:stretch!important;text-align:start!important;margin:70px 0 0!important}#dm .p_hfcontainer div.u_1588226381{float:none!important;left:0!important;width:100%!important;text-align:left!important;display:block!important;margin:38px auto 0!important}#dm .p_hfcontainer div.u_1616548110{padding-top:30px!important;margin-top:0!important;padding-right:50px!important;padding-left:50px!important}#dm .p_hfcontainer div.u_1904430004{margin-top:0!important;padding:0 50px 100px!important}#dm .p_hfcontainer div.u_1686406197{padding-top:0!important;padding-bottom:0!important;margin-top:0!important}#dm .p_hfcontainer div.u_1976198127{float:none!important;top:0!important;left:0!important;width:auto!important;position:relative!important;height:auto!important;max-width:100%!important;min-width:0!important;text-align:center!important;margin:0!important;padding:0 70px 0 40px!important}#dm .p_hfcontainer div.u_1032305664,#dm .p_hfcontainer div.u_1440115899{min-width:25px!important;padding:0!important;left:0!important;position:relative!important;float:none!important;top:0!important;text-align:center!important}#dm .p_hfcontainer div.u_1440115899{width:calc(100% - 137px)!important;height:34px!important;max-width:38px!important;margin:10px 180.99px 10px 137px!important}#dm .p_hfcontainer div.u_1032305664{width:calc(100% - 108px)!important;height:33px!important;max-width:36px!important;margin:10px 187.49px 10px 108px!important}#dm .p_hfcontainer div.u_1227253539{background-repeat:no-repeat!important;background-size:contain!important;padding-top:85px!important}#dm .p_hfcontainer div.u_1248648201{display:block!important;float:none!important;top:0!important;left:0!important;width:399.98px!important;position:relative!important;height:auto!important;max-width:100%!important;min-width:0!important;padding:2px 0!important;margin:8px 0 8px auto!important}#dm .p_hfcontainer #hamburger-drawer.layout-drawer:not([data-origin=top]){width:30vw!important}[dmtemplateid=Hamburger].runtime-module-container .layout-drawer-hamburger{top:36px!important}[dmtemplateid=Hamburger] .site_content{margin-top:124px!important}#dm .dmBody .u_1039034203:before{opacity:.5!important;background-color:#fff!important}#dm .dmBody div.u_1039034203:before{background-color:rgba(233,233,233,1)!important;opacity:.62!important}#dm .dmBody a.u_1618524552{color:#20da99!important;background-color:#20da99!important;border-style:solid!important;border-color:transparent!important;border-width:0!important;border-radius:50px!important;-moz-border-radius:50px!important;-webkit-border-radius:50px!important;-webkit-box-shadow:inset -1px -1px 0 hsla(0,0%,0%,.1),inset 1px 1px 0 hsla(0,0%,100%,.3),2px 2px 2px 0 hsla(0,0%,0%,.35)!important;box-shadow:inset -1px -1px 0 hsla(0,0%,0%,.1),inset 1px 1px 0 hsla(0,0%,100%,.3),2px 2px 2px 0 hsla(0,0%,0%,.35)!important;-moz-box-shadow:inset -1px -1px 0 hsla(0,0%,0%,.1),inset 1px 1px 0 hsla(0,0%,100%,.3),2px 2px 2px 0 hsla(0,0%,0%,.35)!important;max-height:1000px!important;height:50px!important;width:260px!important;float:none!important;top:0!important;max-width:calc(100% - 326px)!important;left:0!important;position:relative!important;min-width:25px!important;text-align:center!important;margin:0 326.84px 10px!important;padding:0!important}#dm .dmBody div.u_1463301859,#dm .dmBody h1.u_1259591359{max-width:100%!important;float:none!important;top:0!important;left:0!important;position:relative!important;height:auto!important}#dm .dmBody a.u_1618524552 span.text{color:#193846!important;font-family:Raleway!important;font-size:20px!important}#dm .dmBody .u_1147602433:before{opacity:.5!important;background-color:#fff!important}#dm .dmBody div.u_1147602433:before{opacity:.6!important;background-image:linear-gradient(135deg,rgba(0,77,159,1) 45%,rgba(255,0,104,1) 100%)!important}#dm .dmBody div.u_1065673217{background-image:url(https://lirp-cdn.multiscreensite.com/8da508db/dms3rep/multi/opt/z_bg_nX6ELLnQQWUjQrSOka9N-11x15-1920w.png)!important;background-color:#007e68!important}#dm .dmBody div.u_1147602433{background-color:rgba(39,3,118,1)!important;background-repeat:no-repeat!important;background-image:url(https://lirp-cdn.multiscreensite.com/91e4550b/dms3rep/multi/opt/apartment-architectural-design-architecture-blue-sky-323775-db931d3c-1920w.jpg)!important;background-size:cover!important}#dm .dmBody div.u_1039034203{background-color:rgba(245,244,244,1)!important;background-repeat:no-repeat!important;background-image:url(https://lirp-cdn.multiscreensite.com/91e4550b/dms3rep/multi/opt/ravi-pinisetti-1zikZJVXSfA-unsplash-3063cb3c-1920w.jpg)!important;border-style:solid!important;border-width:0!important}@media all and (min-width:1920px),all and (-webkit-min-device-pixel-ratio:1.5),all and (min--moz-device-pixel-ratio:1.5),all and (min-device-pixel-ratio:1.5){#dm .dmBody div.u_1065673217{background-image:url(https://lirp-cdn.multiscreensite.com/8da508db/dms3rep/multi/opt/z_bg_nX6ELLnQQWUjQrSOka9N-11x15-2880w.png)!important;background-color:#007e68!important}#dm .dmBody div.u_1147602433{background-color:rgba(39,3,118,1)!important;background-repeat:no-repeat!important;background-image:url(https://lirp-cdn.multiscreensite.com/91e4550b/dms3rep/multi/opt/apartment-architectural-design-architecture-blue-sky-323775-db931d3c-2880w.jpg)!important;background-size:cover!important}#dm .dmBody div.u_1039034203{background-color:rgba(245,244,244,1)!important;background-repeat:no-repeat!important;background-image:url(https://lirp-cdn.multiscreensite.com/91e4550b/dms3rep/multi/opt/ravi-pinisetti-1zikZJVXSfA-unsplash-3063cb3c-2880w.jpg)!important;border-style:solid!important;border-width:0!important}}#dm .d-page-1716942098 DIV.dmInner{background-repeat:no-repeat!important;background-image:url(https://lirp-cdn.multiscreensite.com/91e4550b/dms3rep/multi/opt/apartment-architectural-design-architecture-blue-sky-323775-1920w.jpg)!important;background-size:cover!important;background-attachment:fixed!important;background-position:50% 50%!important;background-color:rgba(240,240,240,1)!important}#dm .dmBody div.u_1065673217{padding-top:30px!important;padding-bottom:30px!important;background-repeat:repeat!important;background-size:auto!important;background-position:bottom right!important}#dm .dmBody div.u_1620625865{padding-top:0!important;background-position:50% 100%!important;background-repeat:no-repeat!important;background-size:contain!important;padding-bottom:0!important}#dm .dmBody div.u_1463301859{width:auto!important;min-width:0!important;text-align:center!important;padding:0 15px!important;margin:0!important}#dm .dmBody div.u_1011716833{padding-top:0!important;padding-bottom:0!important}#dm .dmBody h1.u_1259591359{width:calc(100% - 0px)!important;min-width:25px!important;text-align:left!important;padding:2px 0!important;margin:79px 0 8px!important}#dm .dmBody div.u_1039034203{background-attachment:fixed!important;background-size:cover!important;width:auto!important;margin-right:0!important;margin-top:0!important;margin-left:0!important;padding:82px 68px 55px 72px!important}#dm .dmBody div.u_1147602433{float:none!important;top:0!important;left:0!important;width:100%!important;position:relative!important;height:auto!important;max-width:none!important;min-width:0!important;text-align:center!important;background-position:50% 50%!important;padding:120px 0 218px!important;margin:0!important}.font-size-22,.size-22{font-size:22px!important}.size-23{font-size:23px!important}.font-size-60{font-size:60px!important}.font-size-18{font-size:18px!important}:root{--button-color:#F66035;--button-hover-color:#F86F4C;--text-on-light:#F66035;--text-on-dark:#F66035;--text-on-button:#FFF;--header-color:#313131;--header-border-color:#222222;--header-text-color:#ffffff}#imageZone{position:absolute;margin:auto}.coloumns{border-radius:3px;background-color:#f9980d;height:18px;width:6px;-webkit-animation-name:loader;-webkit-animation-duration:1s;-webkit-animation-iteration-count:infinite;-webkit-animation-direction:linear;-moz-animation-name:loader;-moz-animation-duration:1s;-moz-animation-iteration-count:infinite;-moz-animation-direction:linear;opacity:.25;-webkit-transform:scale(.7);-webkit-transform-origin:50% 180%;-moz-transform:scale(.7);-moz-transform-origin:50% 180%;position:absolute}#coloumn1{-webkit-transform:rotate(0);-webkit-animation-delay:-.914s;-moz-transform:rotate(0);-moz-animation-delay:-.914s}#coloumn2{-webkit-transform:rotate(30deg);-webkit-animation-delay:-.831s;-moz-transform:rotate(30deg);-moz-animation-delay:-.831s}#coloumn3{-webkit-transform:rotate(60deg);-webkit-animation-delay:-.747s;-moz-transform:rotate(60deg);-moz-animation-delay:-.747s}#coloumn4{-webkit-transform:rotate(90deg);-webkit-animation-delay:-.664s;-moz-transform:rotate(90deg);-moz-animation-delay:-.664s}#coloumn5{-webkit-transform:rotate(120deg);-webkit-animation-delay:-.581s;-moz-transform:rotate(120deg);-moz-animation-delay:-.581s}#coloumn6{-webkit-transform:rotate(150deg);-webkit-animation-delay:-.498s;-moz-transform:rotate(150deg);-moz-animation-delay:-.498s}#coloumn7{-webkit-transform:rotate(180deg);-webkit-animation-delay:-.415s;-moz-transform:rotate(180deg);-moz-animation-delay:-.415s}#coloumn8{-webkit-transform:rotate(210deg);-webkit-animation-delay:-.332s;-moz-transform:rotate(210deg);-moz-animation-delay:-.332s}#coloumn9{-webkit-transform:rotate(240deg);-webkit-animation-delay:-.249s;-moz-transform:rotate(240deg);-moz-animation-delay:-.249s}#coloumn10{-webkit-transform:rotate(270deg);-webkit-animation-delay:-.166s;-moz-transform:rotate(270deg);-moz-animation-delay:-.166s}#coloumn11{-webkit-transform:rotate(300deg);-webkit-animation-delay:-83ms;-moz-transform:rotate(300deg);-moz-animation-delay:-83ms}#coloumn12{-webkit-transform:rotate(330deg);-moz-transform:rotate(330deg)}@-webkit-keyframes loader{0%{opacity:1}100%{opacity:.25}}@-moz-keyframes loader{0%{opacity:1}100%{opacity:.25}}
+    .dmDesktopBody [data-anim-desktop]:not([data-anim-desktop='none']) {
+      visibility: hidden;
+    }
+    
+</style><style type="text/css"></style>
+
+
+
+
+<!-- End render the required css and JS in the head section -->
+
+
+
+
+
+
+
+  <link type="application/rss+xml" rel="alternate" href="https://www.serviciosarquitectonicos.com//feed/rss2">
+  <link type="application/atom+xml" rel="alternate" href="https://www.serviciosarquitectonicos.com//feed/atom">
+  <title>
+    
+    Servicios de Arquitectura
+  
+  </title>
+  <meta name="keywords" content="trabajo de diseno de interiores en santo domingo,empresas de diseno de interiores en santo domingo,
+disenadora de interiores en santo domingo,oficinas de arquitectura en santo domingo,empresas de diseño arquitectónico,arquitectónico,servicios arquitectonicos,servicios de arquitectura , arquitecto">
+  <meta name="description" content="Diseño de Interiores , Diseño de exteriores, Remodelaciones, Obras Nuevas,Decoraciones,">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Servicios de Arquitectura">
+  <meta name="twitter:description" content="Diseño de Interiores , Diseño de exteriores, Remodelaciones, Obras Nuevas,Decoraciones,">
+  <meta property="og:description" content="Diseño de Interiores , Diseño de exteriores, Remodelaciones, Obras Nuevas,Decoraciones,">
+  <meta property="og:title" content="Servicios de Arquitectura">
+
+
+
+
+<!-- SYS- VVNfRElSRUNUX1BST0RVQ1RJT04= -->
+<script charset="utf-8" src="./img10_files/15.3ec5d1072423e91b00fb.js.descarga"></script><script charset="utf-8" src="./img10_files/runtime-module-anchors.f115278aac96278bf257.js.descarga"></script><script charset="utf-8" src="./img10_files/1.9a25e57fafe0a4658324.js.descarga"></script><script charset="utf-8" src="./img10_files/3.38495afac0691d9b0e66.js.descarga"></script><script charset="utf-8" src="./img10_files/5.39f1dfeaaab5dcc5bbc4.js.descarga"></script></head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="dmRoot" data-page-alias="home" class="supportsFontIcons supportsFontIcons dmRoot dmDesktopBody fix-mobile-scrolling addCanvasBorder dmResellerSite dmLargeBody pcCustomScrollbar d1SiteBody dmBodyNoIscroll fullyLoaded" style="padding:0;margin:0;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========= Site Content ========= -->
+<div id="dm" class="dmwr">
+    
+    <div class="dm_wrapper hamburgerLayout-var5 null hamburgerLayout">
+         <div dmwrapped="true" id="1901957768" class="dm-home-page" themewaschanged="true"> <div dmtemplateid="Hamburger" class="runtime-module-container dm-bfs dm-layout-home hasAnimations inMiniHeaderMode hasStickyHeader rows-1200 hamburger-reverse dmPageBody dmFreeHeader d-page-1716942098" id="dm-outer-wrapper" data-page-class="1716942098" data-buttonstyle="BORDER_SHORT" data-soch="true" data-background-parallax-selector=".dmHomeSection1, .dmSectionParallex"> <div id="dmStyle_outerContainer" class="dmOuter"> <div id="dmStyle_innerContainer" class="dmInner"> <div class="dmLayoutWrapper standard-var"> <div id="site_content"> <div class="p_hfcontainer"> <div id="hamburger-drawer" class="hamburger-drawer layout-drawer" layout="e9d510f4eb904e939c2be8efaf777e6e===header" data-origin="side-reverse"> <div class="u_1959364221 dmRespRow" style="text-align: center;" id="1959364221"> <div class="dmRespColsWrapper" id="1786948632"> <div class="u_1325509788 dmRespCol small-12 medium-12 large-12 empty-column" id="1325509788"></div> 
+</div> 
+</div> 
+ <div class="u_1616548110 dmRespRow middleDrawerRow" style="text-align: center;" id="1616548110"> <div class="dmRespColsWrapper" id="1322006045"> <div class="dmRespCol small-12 u_1382033079 medium-12 large-12" id="1382033079"> <nav class="u_1761561231 effect-bottom main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="vertical_nav_layout_2" layout-sub="" data-show-vertical-sub-items="HIDE" id="1761561231" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-logo-src="" alt="" data-nav-structure="VERTICAL" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="https://www.serviciosarquitectonicos.com/" class="unifiednav__item dmUDNavigationItem_00 currentPage dmNavItemSelected" target="" data-target-page-alias="" data-auto="selected-page"> <span class="nav-item-text " data-link-text="
+                  
+         Home
+        
+                " data-auto="page-text-style">Home<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="https://www.serviciosarquitectonicos.com/contact" class="unifiednav__item dmUDNavigationItem_010101502206" target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+                  
+         Contact
+        
+                " data-auto="page-text-style">Contact<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class="unifiednav__item-wrap" data-auto="more-pages" data-depth="0"> <a href="https://www.serviciosarquitectonicos.com/about-us" class="unifiednav__item dmUDNavigationItem_010101468151" target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+                  
+         About us
+        
+                " data-auto="page-text-style">About us<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1904430004" style="text-align: center;" id="1904430004"> <div class="dmRespColsWrapper" id="1750366425"> <div class="u_1852758829 dmRespCol small-12 medium-12 large-12" id="1852758829"> <div class="u_1834893332 dmNewParagraph" id="1834893332" style="transition: none;"><div style="text-align: left;"><span style=""><span style=""><font style="color: rgb(255, 255, 255);"><span style="" class="font-size-22 lh-1"><b style=""><span style="font-weight: 700;">Get in touch</span></b></span></font></span></span></div></div> <div class="u_1123203910 dmNewParagraph" id="1123203910"><div><span style="font-size: 20px;"><font style="color: rgb(255, 255, 255);"></font></span></div><div><span style="font-weight: 400;" class="font-size-18 lh-1"><font style="color: rgb(103, 103, 103);"><div style="text-align: left;">+ 1 829 788 3032</div><div style="text-align: left;"><span style="font-weight: inherit;">servarqrd@gmail.com</span></div></font></span></div><div><span style="font-size: 20px;"><font style="color: rgb(255, 255, 255);"></font></span></div></div> <div class="u_1588226381 align-center text-align-center dmSocialHub" id="1588226381" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="mailto:sevarqrd@gmail.com" dm_dont_rewrite_url="true" aria-label="email" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&#39;socialLink&#39;, &#39;click&#39;, &#39;Email&#39;)" target="_blank"> <span class="dmSocialEmail dm-social-icons-email oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="https://web.whatsapp.com/send?phone=+1%20809%20788%203032" target="_blank" dm_dont_rewrite_url="true" aria-label="whatsapp" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&#39;socialLink&#39;, &#39;click&#39;, &#39;Whatsapp&#39;)"> <span class="dmSocialWhatsapp dm-social-icons-whatsapp oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="layout-drawer-overlay" id="layout-drawer-overlay"></div> 
+</div> 
+ <div class="site_content" style="transition: margin-top 0.3s ease 0s; margin-top: 130px !important;"> <div id="hamburger-header-container" class="hamburger-header-container p_hfcontainer"> <div id="hamburger-header" class="hamburger-header p_hfcontainer" layout="44dc38f951e9489490b055748e10ba9f===header"> <div class="u_1976198127 dmRespRow fullBleedChanged fullBleedMode" style="text-align: center;" id="1976198127"> <div class="dmRespColsWrapper" id="1668147588"> <div class="u_1686406197 dmRespCol small-12 medium-12 large-12" id="1686406197"> <div class="dmRespRow" id="1883241270"> <div class="dmRespColsWrapper" id="1014847570"> <div class="u_1227253539 dmRespCol empty-column small-12 large-4 medium-4" id="1227253539"></div> 
+ <div class="u_1308486397 dmRespCol small-12 large-4 medium-4" id="1308486397"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="4" id="1761553875" data-styletopreserve="{" background-image":""}"=""><p><span style="display: initial;">Horario de apertura : 08:00am --- 05:00pm</span></p></div> 
+ <div class="u_1440115899 graphicWidget" data-element-type="graphic" data-widget-type="graphic" id="1440115899"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70" id="1088610329" class="svg u_1088610329" data-icon-name="wp-alarm_clock_thin" data-hover-effect="float"> <g> <path d="M35,22c-0.6,0-1,0.4-1,1v14.6l-6.7,6.7c-0.4,0.4-0.4,1,0,1.4c0.2,0.2,0.5,0.3,0.7,0.3c0.3,0,0.5-0.1,0.7-0.3l7-7
+		c0.2-0.2,0.3-0.4,0.3-0.7V23C36,22.5,35.6,22,35,22z"></path> 
+ <path d="M26.6,12.7c0-0.3-0.1-0.5-0.2-0.7c-2.5-3-7.8-2.6-12,1c-4.2,3.5-5.6,8.7-3,11.7c0.2,0.2,0.4,0.3,0.7,0.4c0,0,0.1,0,0.1,0
+		c0.2,0,0.5-0.1,0.6-0.2l13.6-11.4C26.4,13.2,26.5,13,26.6,12.7z M12.3,22.5c-0.9-2.2,0.5-5.6,3.3-8c1.9-1.6,4.2-2.5,6.1-2.5
+		c0.9,0,1.7,0.2,2.4,0.6L12.3,22.5z"></path> 
+ <path d="M55.7,13c-4.2-3.5-9.5-4-12-1c-0.2,0.2-0.3,0.5-0.2,0.7c0,0.3,0.1,0.5,0.4,0.7l13.6,11.4c0.2,0.2,0.4,0.2,0.6,0.2
+		c0,0,0.1,0,0.1,0c0.3,0,0.5-0.2,0.7-0.4C61.3,21.6,59.9,16.5,55.7,13z M57.7,22.5L46,12.6c2-1.2,5.6-0.5,8.4,1.9
+		C57.3,16.9,58.6,20.3,57.7,22.5z"></path> 
+ <path d="M35,16c-12.1,0-22,9.9-22,22c0,5.8,2.2,11,5.9,14.9l-2.7,4.5c-0.3,0.5-0.1,1.1,0.3,1.4C16.6,59,16.8,59,17,59
+		c0.3,0,0.7-0.2,0.9-0.5l2.5-4.1c3.9,3.5,9,5.6,14.7,5.6c5.6,0,10.8-2.1,14.7-5.6l2.5,4.1c0.2,0.3,0.5,0.5,0.9,0.5
+		c0.2,0,0.4,0,0.5-0.1c0.5-0.3,0.6-0.9,0.3-1.4l-2.7-4.5C54.8,49,57,43.8,57,38C57,25.9,47.1,16,35,16z M15,38c0-11,9-20,20-20
+		c11,0,20,9,20,20s-9,20-20,20C24,58,15,49,15,38z"></path> 
+</g> 
+</svg> 
+</div> 
+</div> 
+ <div class="dmRespCol large-4 medium-4 small-12" id="1126326265"> <div class="u_1248648201 dmNewParagraph" data-element-type="paragraph" data-version="4" id="1248648201"><p><span style="display: initial;">Llámanos&nbsp; + 1 829 788 3032</span></p></div> 
+ <div class="u_1032305664 graphicWidget" data-element-type="graphic" data-widget-type="graphic" id="1032305664"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="1429501998" class="svg u_1429501998" data-icon-name="li_phone" data-hover-effect="float"> <g> <path d="M36.2,22.1v2.2c5.5,0,10,4.5,10,10h2.2C48.4,27.6,42.9,22.1,36.2,22.1z"></path> 
+ <path d="M52.4,34.3h2.2c0-4.9-1.9-9.6-5.4-13.1c-3.5-3.5-8.1-5.4-13.1-5.4V18c4.4,0,8.5,1.7,11.5,4.8C50.7,25.9,52.4,30,52.4,34.3z
+		"></path> 
+ <path d="M65.1,57l-7.8,7.8L38.8,46.3l7.8-7.8l-15-15L23,32.1c-4.7,4.7-4.7,12.5,0,17.2l31.3,31.3c2.3,2.3,5.4,3.6,8.6,3.6
+		c3.2,0,6.3-1.3,8.6-3.6l8.6-8.6L65.1,57z M70,79.1c-1.9,1.9-4.4,2.9-7,2.9c-2.7,0-5.2-1-7-2.9L24.6,47.8c-3.9-3.9-3.9-10.2,0-14.1
+		l7-7l11.9,11.9l-7.8,7.8L57.3,68l7.8-7.8L77,72L70,79.1z"></path> 
+</g> 
+</svg> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div dmwrapped="true" id="dmFirstContainer" class="dmBody u_dmStyle_template_home dm-home-page" themewaschanged="true"> <div id="allWrapper" class="allWrapper"><!-- navigation placeholders --> <div id="dm_content" class="dmContent"> <div dm:templateorder="170" class="dmHomeRespTmpl mainBorder dmRespRowsWrapper dmFullRowRespTmpl dmRespRowsWrapperSize1" id="1716942098"> <div class="u_1147602433 dmRespRow fullBleedChanged fullBleedMode hasBackgroundOverlay" style="text-align: center;" id="1147602433"> <div class="dmRespColsWrapper" id="1487090289"> <div class="dmRespCol small-12 medium-12 large-12 u_1620625865" id="1620625865"> <span id="1937192906"></span> 
+ <div class="u_1463301859 dmRespRow" id="1463301859" data-anim-desktop="bounceInLeft" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scaleX(1); visibility: visible !important; transition-delay: unset !important; transition-duration: unset !important; animation-delay: unset !important; animation-duration: unset !important; transition-property: none !important;"> <div class="dmRespColsWrapper" id="1658940048"> <div class="u_1011716833 dmRespCol small-12 medium-12 large-12" id="1011716833"> <h1 class="u_1259591359 dmNewParagraph" data-element-type="paragraph" id="1259591359" style="transition: none 0s ease 0s; display: block;"><span style="color: rgb(255, 255, 255);" class="m-font-size-36 lh-1 font-size-60">USTED LO NECESITA,</span> <div><span style="color: rgb(255, 255, 255);" class="m-font-size-36 lh-1 font-size-60">NOSOTROS LO DISEÑAMOS.</span><div style=""><font style="color: rgb(255, 255, 255);"><span style=""></span></font></div><div><font style="color: rgb(255, 255, 255); font-weight: normal;"><span style="font-weight: 500;"></span></font></div></div> 
+</h1></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1039034203 dmRespRow dmSectionParallaxNew hasBackgroundOverlay skrollable skrollable-before" style="text-align: center; background-position: 50% 100px; opacity: 1; transform: translate3d(0%, 0%, 0px); visibility: visible !important; transition-delay: unset !important; transition-duration: unset !important; animation-delay: unset !important; animation-duration: unset !important; transition-property: none !important;" id="1039034203" data-anim-desktop="fadeInLeft" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-bottom-top="background-position: 50% 100px;"> <div class="dmRespColsWrapper" id="1019068947"> <div class="dmRespCol small-12 u_1157343543 medium-4 large-4" id="1157343543"> <h3 class="u_1532809754 dmNewParagraph" id="1532809754" data-element-type="paragraph" data-styletopreserve="{" background-image":""}"=""><div style="text-align: center;"><font color="#111111">Diseño de Obras Arquitectónicas</font></div></h3> <div class="u_1574289294 dmNewParagraph" id="1574289294" style="transition-duration: 1s; transition-timing-function: ease-in-out; transition-delay: initial; transition-property: opacity;"><div style="text-align: center;"><font style="color: rgb(0, 0, 0);"><i style="">-Nos reunimos con nuestros clientes para conocer sus necesidades, su línea de deseos y ponemos nuestros conocimientos a su servicio&nbsp;</i><br></font></div><div style="text-align: center;"><i><font style="color: rgb(0, 0, 0);"><br></font></i></div><div style="text-align: center;"><i style=""><font style="color: rgb(0, 0, 0);">-Estudiamos el entorno con el objetivo de lograr las mejores soluciones de ventilación e iluminación con el mayor aprovechamiento del entorno natural del lugar siendo amigables con el medio ambiente﻿</font></i></div></div></div> 
+ <div class="dmRespCol small-12 u_1585574192 medium-4 large-4" id="1585574192"> <h3 class="u_1483389148 dmNewParagraph" id="1483389148" style="" data-element-type="paragraph" data-styletopreserve="{" background-image":""}"=""><div style="text-align: center;"><font style="color: rgb(17, 17, 17);">Remodelaciones</font></div><div style="text-align: center;"></div></h3> <div class="u_1278014395 dmNewParagraph" id="1278014395" style="transition-duration: 1s; transition-timing-function: ease-in-out; transition-delay: initial; transition-property: opacity;"><div style="text-align: center;"><font color="#000000"><i>-Logramos con la utilización de nuestras herramientas de diseño y nuestros conocimientos, un mejor aprovechamiento del espacio de su vivienda añadiendole valores estéticos y funcionales haciendo de ella el lugar al cual siempre querer retornar</i></font></div></div></div> 
+ <div class="dmRespCol small-12 u_1207988752 medium-4 large-4" id="1207988752"> <h3 class="u_1950767189 dmNewParagraph" id="1950767189" data-element-type="paragraph" data-styletopreserve="{" background-image":""}"=""><div style="text-align: center;"><font style="color: rgb(17, 17, 17);">Diseño de Interiores y Exteriores</font></div><div style="text-align: center;"></div></h3> <div class="u_1166673803 dmNewParagraph" id="1166673803" style="transition-duration: 1s; transition-timing-function: ease-in-out; transition-delay: initial; transition-property: opacity;"><div style="text-align: center;"><font color="#686565"><i>-A través de la correcta utilización del espacio,la iluminación,la ventilación y el mobiliario&nbsp; logramos el entorno adecuado para la realización de las diferentes funciones de los espacios arquitectónicos y hacemos de sus areas verdes un lugar de solaz esparcimineto</i></font></div></div></div> 
+</div> 
+</div> 
+ <div class="u_1723508476 dmRespRow" style="text-align: center;" id="1723508476"> <div class="dmRespColsWrapper" id="1923970136"> <div class="u_1805104213 dmRespCol small-12 large-4 medium-4" id="1805104213"> <h3 class="u_1394100419 dmNewParagraph" id="1394100419" style="transition: opacity 1s ease-in-out; display: block;" data-element-type="paragraph"><div><span style="" class="lh-1 "><font style="color: rgb(9, 9, 9);"><span style="font-weight: 700;" class="font-size-30 lh-1">Interesante</span></font></span></div></h3> <div class="u_1230450217 graphicWidget" data-element-type="graphic" data-widget-type="graphic" id="1230450217"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70" id="1703990351" class="svg u_1703990351" data-icon-name="wp-bell_thin"> <path d="M57.7,52.3c-5.2-4.6-5.7-5.4-7.2-24.3C49.9,20.1,44,14.5,36,14v-3c0-0.6-0.4-1-1-1c-0.6,0-1,0.4-1,1v3
+	c-8,0.4-13.9,6-14.5,13.9c-1.5,18.9-1.9,19.7-7.2,24.3c-0.3,0.3-0.4,0.7-0.3,1.1S12.6,54,13,54h16c0,3.3,2.7,6,6,6c3.3,0,6-2.7,6-6
+	h16c0.4,0,0.8-0.3,0.9-0.6C58.1,53,58,52.5,57.7,52.3z M35,58c-2.2,0-4-1.8-4-4h8C39,56.2,37.2,58,35,58z M15.5,52
+	c4.1-4.1,4.6-7.2,5.9-23.9C22.1,21,27.6,16,35,16c7.4,0,12.9,5,13.5,12.1c1.3,16.7,1.8,19.9,5.9,23.9H15.5z"></path> 
+</svg> 
+</div> 
+</div> 
+ <div class="u_1046153297 dmRespCol small-12 large-8 medium-8" id="1046153297"> <div class="u_1935938539 dmNewParagraph" id="1935938539" style="transition: opacity 1s ease-in-out; display: block;"><span style=""></span><div><font style="color: rgb(0, 0, 0);"><b style="" class="font-size-18 lh-1">Tambien ofrecemos asesoria sobre decoración y remodelación para la ejecución de obras menores que no necesiten proyecto</b></font></div><div></div></div></div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1600006934" id="1600006934"> <div class="dmRespColsWrapper" id="1315853669"> <div class="dmRespCol large-12 medium-12 small-12 u_1021675410" id="1021675410"> <h2 class="u_1153123946 dmNewParagraph" data-element-type="paragraph" id="1153123946" style="transition: opacity 1s ease-in-out 0s;"><span style="color: rgb(0, 0, 0); font-size: 42px;">ETAPAS DEL RPOCESO</span></h2></div> 
+</div> 
+</div> 
+ <div class="u_1516553036 dmRespRow" style="text-align: center; opacity: 1; transform: scale(1, 1); visibility: visible !important; transition-delay: unset !important; transition-duration: unset !important; animation-delay: unset !important; animation-duration: unset !important; transition-property: none !important;" id="1516553036" data-anim-desktop="zoomIn"> <div class="dmRespColsWrapper" id="1881233366"> <div class="dmRespCol small-12 u_1333548545 medium-4 large-4" id="1333548545"> <div class="u_1867746026 graphicWidget" data-widget-type="graphic" id="1867746026" data-element-type="graphic"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="1345710356" class="svg u_1345710356" data-hover-effect="float" data-icon-name="business_office_building"> <path d="M69.36,79.4H30.64a1.14,1.14,0,0,1-1.14-1.14v-54a1.14,1.14,0,0,1,1.14-1.14H69.36a1.14,1.14,0,0,1,1.14,1.14v54A1.14,1.14,0,0,1,69.36,79.4ZM31.77,77.13H68.23V25.38H31.77Z"></path> 
+ <path d="M84,86.39H16a1.14,1.14,0,0,1-1.14-1.14v-7A1.14,1.14,0,0,1,16,77.13H84a1.14,1.14,0,0,1,1.14,1.14v7A1.14,1.14,0,0,1,84,86.39ZM17.1,84.12H82.9V79.4H17.1Z"></path> 
+ <path d="M21.3,79.4a1.14,1.14,0,0,1-1.14-1.14V73.58a1.14,1.14,0,1,1,2.27,0v4.68A1.14,1.14,0,0,1,21.3,79.4Z"></path> 
+ <path d="M21.3,74.72c-3,0-5.33-3.6-5.33-8.2s2.34-8.2,5.33-8.2,5.33,3.6,5.33,8.2S24.29,74.72,21.3,74.72Zm0-14.13c-1.45,0-3.06,2.43-3.06,5.93s1.61,5.93,3.06,5.93,3.06-2.43,3.06-5.93S22.75,60.59,21.3,60.59Z"></path> 
+ <path d="M78.7,79.4a1.14,1.14,0,0,1-1.14-1.14V73.58a1.14,1.14,0,1,1,2.27,0v4.68A1.14,1.14,0,0,1,78.7,79.4Z"></path> 
+ <path d="M78.7,74.72c-3,0-5.33-3.6-5.33-8.2s2.34-8.2,5.33-8.2S84,61.92,84,66.52,81.69,74.72,78.7,74.72Zm0-14.13c-1.45,0-3.06,2.43-3.06,5.93s1.61,5.93,3.06,5.93,3.06-2.43,3.06-5.93S80.15,60.59,78.7,60.59Z"></path> 
+ <path d="M36.37,33.59a1.14,1.14,0,0,1-1.14-1.14V29.08a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,36.37,33.59Z"></path> 
+ <path d="M43.19,33.59A1.14,1.14,0,0,1,42,32.46V29.08a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,43.19,33.59Z"></path> 
+ <path d="M50,33.59a1.14,1.14,0,0,1-1.14-1.14V29.08a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,50,33.59Z"></path> 
+ <path d="M56.81,33.59a1.14,1.14,0,0,1-1.14-1.14V29.08a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,56.81,33.59Z"></path> 
+ <path d="M63.63,33.59a1.14,1.14,0,0,1-1.14-1.14V29.08a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,63.63,33.59Z"></path> 
+ <path d="M36.37,43.44a1.14,1.14,0,0,1-1.14-1.14V38.93a1.14,1.14,0,1,1,2.27,0V42.3A1.14,1.14,0,0,1,36.37,43.44Z"></path> 
+ <path d="M43.19,43.44A1.14,1.14,0,0,1,42,42.3V38.93a1.14,1.14,0,1,1,2.27,0V42.3A1.14,1.14,0,0,1,43.19,43.44Z"></path> 
+ <path d="M50,43.44a1.14,1.14,0,0,1-1.14-1.14V38.93a1.14,1.14,0,1,1,2.27,0V42.3A1.14,1.14,0,0,1,50,43.44Z"></path> 
+ <path d="M56.81,43.44a1.14,1.14,0,0,1-1.14-1.14V38.93a1.14,1.14,0,1,1,2.27,0V42.3A1.14,1.14,0,0,1,56.81,43.44Z"></path> 
+ <path d="M63.63,43.44a1.14,1.14,0,0,1-1.14-1.14V38.93a1.14,1.14,0,1,1,2.27,0V42.3A1.14,1.14,0,0,1,63.63,43.44Z"></path> 
+ <path d="M36.37,53.29a1.14,1.14,0,0,1-1.14-1.14V48.78a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,36.37,53.29Z"></path> 
+ <path d="M43.19,53.29A1.14,1.14,0,0,1,42,52.15V48.78a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,43.19,53.29Z"></path> 
+ <path d="M50,53.29a1.14,1.14,0,0,1-1.14-1.14V48.78a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,50,53.29Z"></path> 
+ <path d="M56.81,53.29a1.14,1.14,0,0,1-1.14-1.14V48.78a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,56.81,53.29Z"></path> 
+ <path d="M63.63,53.29a1.14,1.14,0,0,1-1.14-1.14V48.78a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,63.63,53.29Z"></path> 
+ <path d="M36.37,63.13A1.14,1.14,0,0,1,35.24,62V58.62a1.14,1.14,0,1,1,2.27,0V62A1.14,1.14,0,0,1,36.37,63.13Z"></path> 
+ <path d="M43.19,63.13A1.14,1.14,0,0,1,42,62V58.62a1.14,1.14,0,1,1,2.27,0V62A1.14,1.14,0,0,1,43.19,63.13Z"></path> 
+ <path d="M50,63.13A1.14,1.14,0,0,1,48.86,62V58.62a1.14,1.14,0,1,1,2.27,0V62A1.14,1.14,0,0,1,50,63.13Z"></path> 
+ <path d="M56.81,63.13A1.14,1.14,0,0,1,55.68,62V58.62a1.14,1.14,0,1,1,2.27,0V62A1.14,1.14,0,0,1,56.81,63.13Z"></path> 
+ <path d="M63.63,63.13A1.14,1.14,0,0,1,62.49,62V58.62a1.14,1.14,0,1,1,2.27,0V62A1.14,1.14,0,0,1,63.63,63.13Z"></path> 
+ <path d="M36.37,73a1.14,1.14,0,0,1-1.14-1.14V68.47a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,36.37,73Z"></path> 
+ <path d="M63.63,73a1.14,1.14,0,0,1-1.14-1.14V68.47a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,63.63,73Z"></path> 
+ <path d="M57.85,79.4H42.15A1.14,1.14,0,0,1,41,78.27V66.52a1.14,1.14,0,0,1,1.14-1.14h15.7A1.14,1.14,0,0,1,59,66.52V78.27A1.14,1.14,0,0,1,57.85,79.4ZM43.29,77.13H56.71V67.66H43.29Z"></path> 
+ <path d="M50,79.4H42.15A1.14,1.14,0,0,1,41,78.27V66.52a1.14,1.14,0,0,1,1.14-1.14H50a1.14,1.14,0,0,1,1.14,1.14V78.27A1.14,1.14,0,0,1,50,79.4Zm-6.71-2.27h5.57V67.66H43.29Z"></path> 
+ <path d="M36.46,21.47a1.14,1.14,0,0,1-.53-.13l-1.29-.68-1.29.68a1.14,1.14,0,0,1-1.65-1.2l.25-1.43-1-1a1.14,1.14,0,0,1,.63-1.94L33,15.54l.64-1.3a1.14,1.14,0,0,1,2,0l.64,1.3,1.44.21a1.14,1.14,0,0,1,.63,1.94l-1,1,.25,1.43a1.14,1.14,0,0,1-1.12,1.33ZM34.1,17.66a1.14,1.14,0,0,1,.21.63,1.14,1.14,0,0,1,.67,0,1.14,1.14,0,0,1,.21-.63,1.14,1.14,0,0,1-.54-.39A1.14,1.14,0,0,1,34.1,17.66Z"></path> 
+ <path d="M40.5,21.47a1.14,1.14,0,0,1-1.12-1.33l.25-1.43-1-1a1.14,1.14,0,0,1,.63-1.94l1.44-.21.64-1.3a1.14,1.14,0,0,1,2,0l.64,1.3,1.44.21a1.14,1.14,0,0,1,.63,1.94l-1,1,.25,1.43a1.14,1.14,0,0,1-1.65,1.2l-1.29-.68L41,21.34A1.14,1.14,0,0,1,40.5,21.47Zm1.82-3.23a1.14,1.14,0,0,1,.33,0,1.14,1.14,0,0,1,.21-.63,1.14,1.14,0,0,1-.54-.39,1.14,1.14,0,0,1-.54.39,1.14,1.14,0,0,1,.21.63A1.14,1.14,0,0,1,42.32,18.24Z"></path> 
+ <path d="M51.82,21.47a1.13,1.13,0,0,1-.53-.13L50,20.66l-1.29.68a1.14,1.14,0,0,1-1.65-1.2l.25-1.43-1-1a1.14,1.14,0,0,1,.63-1.94l1.44-.21.64-1.3a1.14,1.14,0,0,1,2,0l.64,1.3,1.44.21a1.14,1.14,0,0,1,.63,1.94l-1,1,.25,1.43a1.14,1.14,0,0,1-1.12,1.33ZM50,18.24a1.14,1.14,0,0,1,.33,0,1.14,1.14,0,0,1,.21-.63,1.14,1.14,0,0,1-.54-.39,1.14,1.14,0,0,1-.54.39,1.14,1.14,0,0,1,.21.63A1.14,1.14,0,0,1,50,18.24Z"></path> 
+ <path d="M55.86,21.47a1.14,1.14,0,0,1-1.12-1.33L55,18.71l-1-1a1.14,1.14,0,0,1,.63-1.94L56,15.54l.64-1.3a1.14,1.14,0,0,1,2,0l.64,1.3,1.44.21a1.14,1.14,0,0,1,.63,1.94l-1,1,.25,1.43A1.14,1.14,0,0,1,59,21.34l-1.29-.68-1.29.68A1.13,1.13,0,0,1,55.86,21.47Zm1.28-3.81a1.14,1.14,0,0,1,.21.63,1.14,1.14,0,0,1,.66,0,1.14,1.14,0,0,1,.21-.63,1.14,1.14,0,0,1-.54-.39A1.14,1.14,0,0,1,57.14,17.66Z"></path> 
+ <path d="M67.18,21.47a1.14,1.14,0,0,1-.53-.13l-1.29-.68-1.29.68a1.14,1.14,0,0,1-1.65-1.2l.25-1.43-1-1a1.14,1.14,0,0,1,.63-1.94l1.44-.21.64-1.3a1.14,1.14,0,0,1,2,0l.64,1.3,1.44.21a1.14,1.14,0,0,1,.63,1.94l-1,1,.25,1.43a1.14,1.14,0,0,1-1.12,1.33Zm-2.35-3.81a1.14,1.14,0,0,1,.21.63,1.14,1.14,0,0,1,.66,0,1.14,1.14,0,0,1,.21-.63,1.14,1.14,0,0,1-.54-.39A1.14,1.14,0,0,1,64.82,17.66Z"></path> 
+</svg> 
+</div> 
+ <div class="u_1460559450 dmNewParagraph" id="1460559450" style="transition-duration: 1s; transition-timing-function: ease-in-out; transition-delay: initial; transition-property: opacity; display: block;"><div style="text-align: center;"><span style="color: rgb(107, 104, 104); font-style: italic;">Diseño arquitectónico.</span></div><div style="text-align: center;"><span style="color: rgb(107, 104, 104); font-style: italic;"><br></span></div><div style="text-align: center;"><span style="color: rgb(107, 104, 104); font-style: italic;">-Visita al lugar&nbsp;</span></div><div style="text-align: center;">-Anteproyecto</div><div style="text-align: center;"><span style="color: rgb(107, 104, 104); font-style: italic;">-Entrega de un diseño que traduzca la idea del cliente a través de modelos en 3d.</span></div><div style="text-align: center;"><span style="color: rgb(107, 104, 104); font-style: italic;">- Cálculos de las principales áreas en metros cuadrados que le permitiran conocer la envergadura de su inversión.</span></div></div></div> 
+ <div class="dmRespCol small-12 u_1054407942 medium-4 large-4" id="1054407942"> <div class="u_1860743170 graphicWidget" data-widget-type="graphic" id="1860743170" data-element-type="graphic"> <a href="https://www.serviciosarquitectonicos.com/" id="1389017823"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="1070257956" class="svg u_1070257956" data-hover-effect="float" data-icon-name="business_office_building"> <path d="M69.36,79.4H30.64a1.14,1.14,0,0,1-1.14-1.14v-54a1.14,1.14,0,0,1,1.14-1.14H69.36a1.14,1.14,0,0,1,1.14,1.14v54A1.14,1.14,0,0,1,69.36,79.4ZM31.77,77.13H68.23V25.38H31.77Z"></path> 
+ <path d="M84,86.39H16a1.14,1.14,0,0,1-1.14-1.14v-7A1.14,1.14,0,0,1,16,77.13H84a1.14,1.14,0,0,1,1.14,1.14v7A1.14,1.14,0,0,1,84,86.39ZM17.1,84.12H82.9V79.4H17.1Z"></path> 
+ <path d="M21.3,79.4a1.14,1.14,0,0,1-1.14-1.14V73.58a1.14,1.14,0,1,1,2.27,0v4.68A1.14,1.14,0,0,1,21.3,79.4Z"></path> 
+ <path d="M21.3,74.72c-3,0-5.33-3.6-5.33-8.2s2.34-8.2,5.33-8.2,5.33,3.6,5.33,8.2S24.29,74.72,21.3,74.72Zm0-14.13c-1.45,0-3.06,2.43-3.06,5.93s1.61,5.93,3.06,5.93,3.06-2.43,3.06-5.93S22.75,60.59,21.3,60.59Z"></path> 
+ <path d="M78.7,79.4a1.14,1.14,0,0,1-1.14-1.14V73.58a1.14,1.14,0,1,1,2.27,0v4.68A1.14,1.14,0,0,1,78.7,79.4Z"></path> 
+ <path d="M78.7,74.72c-3,0-5.33-3.6-5.33-8.2s2.34-8.2,5.33-8.2S84,61.92,84,66.52,81.69,74.72,78.7,74.72Zm0-14.13c-1.45,0-3.06,2.43-3.06,5.93s1.61,5.93,3.06,5.93,3.06-2.43,3.06-5.93S80.15,60.59,78.7,60.59Z"></path> 
+ <path d="M36.37,33.59a1.14,1.14,0,0,1-1.14-1.14V29.08a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,36.37,33.59Z"></path> 
+ <path d="M43.19,33.59A1.14,1.14,0,0,1,42,32.46V29.08a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,43.19,33.59Z"></path> 
+ <path d="M50,33.59a1.14,1.14,0,0,1-1.14-1.14V29.08a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,50,33.59Z"></path> 
+ <path d="M56.81,33.59a1.14,1.14,0,0,1-1.14-1.14V29.08a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,56.81,33.59Z"></path> 
+ <path d="M63.63,33.59a1.14,1.14,0,0,1-1.14-1.14V29.08a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,63.63,33.59Z"></path> 
+ <path d="M36.37,43.44a1.14,1.14,0,0,1-1.14-1.14V38.93a1.14,1.14,0,1,1,2.27,0V42.3A1.14,1.14,0,0,1,36.37,43.44Z"></path> 
+ <path d="M43.19,43.44A1.14,1.14,0,0,1,42,42.3V38.93a1.14,1.14,0,1,1,2.27,0V42.3A1.14,1.14,0,0,1,43.19,43.44Z"></path> 
+ <path d="M50,43.44a1.14,1.14,0,0,1-1.14-1.14V38.93a1.14,1.14,0,1,1,2.27,0V42.3A1.14,1.14,0,0,1,50,43.44Z"></path> 
+ <path d="M56.81,43.44a1.14,1.14,0,0,1-1.14-1.14V38.93a1.14,1.14,0,1,1,2.27,0V42.3A1.14,1.14,0,0,1,56.81,43.44Z"></path> 
+ <path d="M63.63,43.44a1.14,1.14,0,0,1-1.14-1.14V38.93a1.14,1.14,0,1,1,2.27,0V42.3A1.14,1.14,0,0,1,63.63,43.44Z"></path> 
+ <path d="M36.37,53.29a1.14,1.14,0,0,1-1.14-1.14V48.78a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,36.37,53.29Z"></path> 
+ <path d="M43.19,53.29A1.14,1.14,0,0,1,42,52.15V48.78a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,43.19,53.29Z"></path> 
+ <path d="M50,53.29a1.14,1.14,0,0,1-1.14-1.14V48.78a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,50,53.29Z"></path> 
+ <path d="M56.81,53.29a1.14,1.14,0,0,1-1.14-1.14V48.78a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,56.81,53.29Z"></path> 
+ <path d="M63.63,53.29a1.14,1.14,0,0,1-1.14-1.14V48.78a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,63.63,53.29Z"></path> 
+ <path d="M36.37,63.13A1.14,1.14,0,0,1,35.24,62V58.62a1.14,1.14,0,1,1,2.27,0V62A1.14,1.14,0,0,1,36.37,63.13Z"></path> 
+ <path d="M43.19,63.13A1.14,1.14,0,0,1,42,62V58.62a1.14,1.14,0,1,1,2.27,0V62A1.14,1.14,0,0,1,43.19,63.13Z"></path> 
+ <path d="M50,63.13A1.14,1.14,0,0,1,48.86,62V58.62a1.14,1.14,0,1,1,2.27,0V62A1.14,1.14,0,0,1,50,63.13Z"></path> 
+ <path d="M56.81,63.13A1.14,1.14,0,0,1,55.68,62V58.62a1.14,1.14,0,1,1,2.27,0V62A1.14,1.14,0,0,1,56.81,63.13Z"></path> 
+ <path d="M63.63,63.13A1.14,1.14,0,0,1,62.49,62V58.62a1.14,1.14,0,1,1,2.27,0V62A1.14,1.14,0,0,1,63.63,63.13Z"></path> 
+ <path d="M36.37,73a1.14,1.14,0,0,1-1.14-1.14V68.47a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,36.37,73Z"></path> 
+ <path d="M63.63,73a1.14,1.14,0,0,1-1.14-1.14V68.47a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,63.63,73Z"></path> 
+ <path d="M57.85,79.4H42.15A1.14,1.14,0,0,1,41,78.27V66.52a1.14,1.14,0,0,1,1.14-1.14h15.7A1.14,1.14,0,0,1,59,66.52V78.27A1.14,1.14,0,0,1,57.85,79.4ZM43.29,77.13H56.71V67.66H43.29Z"></path> 
+ <path d="M50,79.4H42.15A1.14,1.14,0,0,1,41,78.27V66.52a1.14,1.14,0,0,1,1.14-1.14H50a1.14,1.14,0,0,1,1.14,1.14V78.27A1.14,1.14,0,0,1,50,79.4Zm-6.71-2.27h5.57V67.66H43.29Z"></path> 
+ <path d="M36.46,21.47a1.14,1.14,0,0,1-.53-.13l-1.29-.68-1.29.68a1.14,1.14,0,0,1-1.65-1.2l.25-1.43-1-1a1.14,1.14,0,0,1,.63-1.94L33,15.54l.64-1.3a1.14,1.14,0,0,1,2,0l.64,1.3,1.44.21a1.14,1.14,0,0,1,.63,1.94l-1,1,.25,1.43a1.14,1.14,0,0,1-1.12,1.33ZM34.1,17.66a1.14,1.14,0,0,1,.21.63,1.14,1.14,0,0,1,.67,0,1.14,1.14,0,0,1,.21-.63,1.14,1.14,0,0,1-.54-.39A1.14,1.14,0,0,1,34.1,17.66Z"></path> 
+ <path d="M40.5,21.47a1.14,1.14,0,0,1-1.12-1.33l.25-1.43-1-1a1.14,1.14,0,0,1,.63-1.94l1.44-.21.64-1.3a1.14,1.14,0,0,1,2,0l.64,1.3,1.44.21a1.14,1.14,0,0,1,.63,1.94l-1,1,.25,1.43a1.14,1.14,0,0,1-1.65,1.2l-1.29-.68L41,21.34A1.14,1.14,0,0,1,40.5,21.47Zm1.82-3.23a1.14,1.14,0,0,1,.33,0,1.14,1.14,0,0,1,.21-.63,1.14,1.14,0,0,1-.54-.39,1.14,1.14,0,0,1-.54.39,1.14,1.14,0,0,1,.21.63A1.14,1.14,0,0,1,42.32,18.24Z"></path> 
+ <path d="M51.82,21.47a1.13,1.13,0,0,1-.53-.13L50,20.66l-1.29.68a1.14,1.14,0,0,1-1.65-1.2l.25-1.43-1-1a1.14,1.14,0,0,1,.63-1.94l1.44-.21.64-1.3a1.14,1.14,0,0,1,2,0l.64,1.3,1.44.21a1.14,1.14,0,0,1,.63,1.94l-1,1,.25,1.43a1.14,1.14,0,0,1-1.12,1.33ZM50,18.24a1.14,1.14,0,0,1,.33,0,1.14,1.14,0,0,1,.21-.63,1.14,1.14,0,0,1-.54-.39,1.14,1.14,0,0,1-.54.39,1.14,1.14,0,0,1,.21.63A1.14,1.14,0,0,1,50,18.24Z"></path> 
+ <path d="M55.86,21.47a1.14,1.14,0,0,1-1.12-1.33L55,18.71l-1-1a1.14,1.14,0,0,1,.63-1.94L56,15.54l.64-1.3a1.14,1.14,0,0,1,2,0l.64,1.3,1.44.21a1.14,1.14,0,0,1,.63,1.94l-1,1,.25,1.43A1.14,1.14,0,0,1,59,21.34l-1.29-.68-1.29.68A1.13,1.13,0,0,1,55.86,21.47Zm1.28-3.81a1.14,1.14,0,0,1,.21.63,1.14,1.14,0,0,1,.66,0,1.14,1.14,0,0,1,.21-.63,1.14,1.14,0,0,1-.54-.39A1.14,1.14,0,0,1,57.14,17.66Z"></path> 
+ <path d="M67.18,21.47a1.14,1.14,0,0,1-.53-.13l-1.29-.68-1.29.68a1.14,1.14,0,0,1-1.65-1.2l.25-1.43-1-1a1.14,1.14,0,0,1,.63-1.94l1.44-.21.64-1.3a1.14,1.14,0,0,1,2,0l.64,1.3,1.44.21a1.14,1.14,0,0,1,.63,1.94l-1,1,.25,1.43a1.14,1.14,0,0,1-1.12,1.33Zm-2.35-3.81a1.14,1.14,0,0,1,.21.63,1.14,1.14,0,0,1,.66,0,1.14,1.14,0,0,1,.21-.63,1.14,1.14,0,0,1-.54-.39A1.14,1.14,0,0,1,64.82,17.66Z"></path> 
+</svg> 
+</a> 
+</div> 
+ <div class="u_1980611161 dmNewParagraph" id="1980611161"><div style="text-align: center;"><i><font style="color: rgb(107, 104, 104);">Proyecto ejecutivo</font></i></div><div style="text-align: center;"><i><font style="color: rgb(107, 104, 104);"><br></font></i></div><div style="text-align: center;"><i><font style="color: rgb(107, 104, 104);">-Elaboración de la documentación técnica necesaria</font></i></div><div style="text-align: center;"><i><font style="color: rgb(107, 104, 104);">-Esta documentación puede variar en dependencia del destinatario ya sean particulares que contraten proyecto para su ejecución o instituciones que puedan contar con sus propios especialistas ejemplo inmobiliarias,constructoras,desarrolladores y demás.</font></i></div></div></div> 
+ <div class="dmRespCol small-12 u_1401491392 medium-4 large-4" id="1401491392"> <div class="u_1139261271 graphicWidget" data-widget-type="graphic" id="1139261271" data-element-type="graphic"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="1340844658" class="svg u_1340844658" data-hover-effect="float" data-icon-name="business_office_building"> <path d="M69.36,79.4H30.64a1.14,1.14,0,0,1-1.14-1.14v-54a1.14,1.14,0,0,1,1.14-1.14H69.36a1.14,1.14,0,0,1,1.14,1.14v54A1.14,1.14,0,0,1,69.36,79.4ZM31.77,77.13H68.23V25.38H31.77Z"></path> 
+ <path d="M84,86.39H16a1.14,1.14,0,0,1-1.14-1.14v-7A1.14,1.14,0,0,1,16,77.13H84a1.14,1.14,0,0,1,1.14,1.14v7A1.14,1.14,0,0,1,84,86.39ZM17.1,84.12H82.9V79.4H17.1Z"></path> 
+ <path d="M21.3,79.4a1.14,1.14,0,0,1-1.14-1.14V73.58a1.14,1.14,0,1,1,2.27,0v4.68A1.14,1.14,0,0,1,21.3,79.4Z"></path> 
+ <path d="M21.3,74.72c-3,0-5.33-3.6-5.33-8.2s2.34-8.2,5.33-8.2,5.33,3.6,5.33,8.2S24.29,74.72,21.3,74.72Zm0-14.13c-1.45,0-3.06,2.43-3.06,5.93s1.61,5.93,3.06,5.93,3.06-2.43,3.06-5.93S22.75,60.59,21.3,60.59Z"></path> 
+ <path d="M78.7,79.4a1.14,1.14,0,0,1-1.14-1.14V73.58a1.14,1.14,0,1,1,2.27,0v4.68A1.14,1.14,0,0,1,78.7,79.4Z"></path> 
+ <path d="M78.7,74.72c-3,0-5.33-3.6-5.33-8.2s2.34-8.2,5.33-8.2S84,61.92,84,66.52,81.69,74.72,78.7,74.72Zm0-14.13c-1.45,0-3.06,2.43-3.06,5.93s1.61,5.93,3.06,5.93,3.06-2.43,3.06-5.93S80.15,60.59,78.7,60.59Z"></path> 
+ <path d="M36.37,33.59a1.14,1.14,0,0,1-1.14-1.14V29.08a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,36.37,33.59Z"></path> 
+ <path d="M43.19,33.59A1.14,1.14,0,0,1,42,32.46V29.08a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,43.19,33.59Z"></path> 
+ <path d="M50,33.59a1.14,1.14,0,0,1-1.14-1.14V29.08a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,50,33.59Z"></path> 
+ <path d="M56.81,33.59a1.14,1.14,0,0,1-1.14-1.14V29.08a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,56.81,33.59Z"></path> 
+ <path d="M63.63,33.59a1.14,1.14,0,0,1-1.14-1.14V29.08a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,63.63,33.59Z"></path> 
+ <path d="M36.37,43.44a1.14,1.14,0,0,1-1.14-1.14V38.93a1.14,1.14,0,1,1,2.27,0V42.3A1.14,1.14,0,0,1,36.37,43.44Z"></path> 
+ <path d="M43.19,43.44A1.14,1.14,0,0,1,42,42.3V38.93a1.14,1.14,0,1,1,2.27,0V42.3A1.14,1.14,0,0,1,43.19,43.44Z"></path> 
+ <path d="M50,43.44a1.14,1.14,0,0,1-1.14-1.14V38.93a1.14,1.14,0,1,1,2.27,0V42.3A1.14,1.14,0,0,1,50,43.44Z"></path> 
+ <path d="M56.81,43.44a1.14,1.14,0,0,1-1.14-1.14V38.93a1.14,1.14,0,1,1,2.27,0V42.3A1.14,1.14,0,0,1,56.81,43.44Z"></path> 
+ <path d="M63.63,43.44a1.14,1.14,0,0,1-1.14-1.14V38.93a1.14,1.14,0,1,1,2.27,0V42.3A1.14,1.14,0,0,1,63.63,43.44Z"></path> 
+ <path d="M36.37,53.29a1.14,1.14,0,0,1-1.14-1.14V48.78a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,36.37,53.29Z"></path> 
+ <path d="M43.19,53.29A1.14,1.14,0,0,1,42,52.15V48.78a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,43.19,53.29Z"></path> 
+ <path d="M50,53.29a1.14,1.14,0,0,1-1.14-1.14V48.78a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,50,53.29Z"></path> 
+ <path d="M56.81,53.29a1.14,1.14,0,0,1-1.14-1.14V48.78a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,56.81,53.29Z"></path> 
+ <path d="M63.63,53.29a1.14,1.14,0,0,1-1.14-1.14V48.78a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,63.63,53.29Z"></path> 
+ <path d="M36.37,63.13A1.14,1.14,0,0,1,35.24,62V58.62a1.14,1.14,0,1,1,2.27,0V62A1.14,1.14,0,0,1,36.37,63.13Z"></path> 
+ <path d="M43.19,63.13A1.14,1.14,0,0,1,42,62V58.62a1.14,1.14,0,1,1,2.27,0V62A1.14,1.14,0,0,1,43.19,63.13Z"></path> 
+ <path d="M50,63.13A1.14,1.14,0,0,1,48.86,62V58.62a1.14,1.14,0,1,1,2.27,0V62A1.14,1.14,0,0,1,50,63.13Z"></path> 
+ <path d="M56.81,63.13A1.14,1.14,0,0,1,55.68,62V58.62a1.14,1.14,0,1,1,2.27,0V62A1.14,1.14,0,0,1,56.81,63.13Z"></path> 
+ <path d="M63.63,63.13A1.14,1.14,0,0,1,62.49,62V58.62a1.14,1.14,0,1,1,2.27,0V62A1.14,1.14,0,0,1,63.63,63.13Z"></path> 
+ <path d="M36.37,73a1.14,1.14,0,0,1-1.14-1.14V68.47a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,36.37,73Z"></path> 
+ <path d="M63.63,73a1.14,1.14,0,0,1-1.14-1.14V68.47a1.14,1.14,0,1,1,2.27,0v3.37A1.14,1.14,0,0,1,63.63,73Z"></path> 
+ <path d="M57.85,79.4H42.15A1.14,1.14,0,0,1,41,78.27V66.52a1.14,1.14,0,0,1,1.14-1.14h15.7A1.14,1.14,0,0,1,59,66.52V78.27A1.14,1.14,0,0,1,57.85,79.4ZM43.29,77.13H56.71V67.66H43.29Z"></path> 
+ <path d="M50,79.4H42.15A1.14,1.14,0,0,1,41,78.27V66.52a1.14,1.14,0,0,1,1.14-1.14H50a1.14,1.14,0,0,1,1.14,1.14V78.27A1.14,1.14,0,0,1,50,79.4Zm-6.71-2.27h5.57V67.66H43.29Z"></path> 
+ <path d="M36.46,21.47a1.14,1.14,0,0,1-.53-.13l-1.29-.68-1.29.68a1.14,1.14,0,0,1-1.65-1.2l.25-1.43-1-1a1.14,1.14,0,0,1,.63-1.94L33,15.54l.64-1.3a1.14,1.14,0,0,1,2,0l.64,1.3,1.44.21a1.14,1.14,0,0,1,.63,1.94l-1,1,.25,1.43a1.14,1.14,0,0,1-1.12,1.33ZM34.1,17.66a1.14,1.14,0,0,1,.21.63,1.14,1.14,0,0,1,.67,0,1.14,1.14,0,0,1,.21-.63,1.14,1.14,0,0,1-.54-.39A1.14,1.14,0,0,1,34.1,17.66Z"></path> 
+ <path d="M40.5,21.47a1.14,1.14,0,0,1-1.12-1.33l.25-1.43-1-1a1.14,1.14,0,0,1,.63-1.94l1.44-.21.64-1.3a1.14,1.14,0,0,1,2,0l.64,1.3,1.44.21a1.14,1.14,0,0,1,.63,1.94l-1,1,.25,1.43a1.14,1.14,0,0,1-1.65,1.2l-1.29-.68L41,21.34A1.14,1.14,0,0,1,40.5,21.47Zm1.82-3.23a1.14,1.14,0,0,1,.33,0,1.14,1.14,0,0,1,.21-.63,1.14,1.14,0,0,1-.54-.39,1.14,1.14,0,0,1-.54.39,1.14,1.14,0,0,1,.21.63A1.14,1.14,0,0,1,42.32,18.24Z"></path> 
+ <path d="M51.82,21.47a1.13,1.13,0,0,1-.53-.13L50,20.66l-1.29.68a1.14,1.14,0,0,1-1.65-1.2l.25-1.43-1-1a1.14,1.14,0,0,1,.63-1.94l1.44-.21.64-1.3a1.14,1.14,0,0,1,2,0l.64,1.3,1.44.21a1.14,1.14,0,0,1,.63,1.94l-1,1,.25,1.43a1.14,1.14,0,0,1-1.12,1.33ZM50,18.24a1.14,1.14,0,0,1,.33,0,1.14,1.14,0,0,1,.21-.63,1.14,1.14,0,0,1-.54-.39,1.14,1.14,0,0,1-.54.39,1.14,1.14,0,0,1,.21.63A1.14,1.14,0,0,1,50,18.24Z"></path> 
+ <path d="M55.86,21.47a1.14,1.14,0,0,1-1.12-1.33L55,18.71l-1-1a1.14,1.14,0,0,1,.63-1.94L56,15.54l.64-1.3a1.14,1.14,0,0,1,2,0l.64,1.3,1.44.21a1.14,1.14,0,0,1,.63,1.94l-1,1,.25,1.43A1.14,1.14,0,0,1,59,21.34l-1.29-.68-1.29.68A1.13,1.13,0,0,1,55.86,21.47Zm1.28-3.81a1.14,1.14,0,0,1,.21.63,1.14,1.14,0,0,1,.66,0,1.14,1.14,0,0,1,.21-.63,1.14,1.14,0,0,1-.54-.39A1.14,1.14,0,0,1,57.14,17.66Z"></path> 
+ <path d="M67.18,21.47a1.14,1.14,0,0,1-.53-.13l-1.29-.68-1.29.68a1.14,1.14,0,0,1-1.65-1.2l.25-1.43-1-1a1.14,1.14,0,0,1,.63-1.94l1.44-.21.64-1.3a1.14,1.14,0,0,1,2,0l.64,1.3,1.44.21a1.14,1.14,0,0,1,.63,1.94l-1,1,.25,1.43a1.14,1.14,0,0,1-1.12,1.33Zm-2.35-3.81a1.14,1.14,0,0,1,.21.63,1.14,1.14,0,0,1,.66,0,1.14,1.14,0,0,1,.21-.63,1.14,1.14,0,0,1-.54-.39A1.14,1.14,0,0,1,64.82,17.66Z"></path> 
+</svg> 
+</div> 
+ <div class="u_1657859130 dmNewParagraph" id="1657859130" style="transition: none 0s ease 0s; display: block;"><div style="text-align: center;"><i><font style="color: rgb(107, 104, 104);">Control de Autor</font></i><br></div><div style="text-align: center;"><i><font style="color: rgb(107, 104, 104);">(Opcional)</font></i></div><div style="text-align: center;"><i><font style="color: rgb(107, 104, 104);"><br></font></i></div><div style="text-align: center;"><i><font style="color: rgb(107, 104, 104);">-Una vez entregado el proyecto al cliente y habiendo seleccionado la entidad constructora en coordinación con el cliente y constructor, se programaran visitas a la obra con el fin de verificar el cumplimiento de las especificaciones de proyecto.</font></i></div></div></div> 
+</div> 
+</div> 
+ <div class="u_1265495822 dmRespRow" style="text-align: center;" id="1265495822"> <div class="dmRespColsWrapper" id="1965470064"> <div class="u_1715995284 dmRespCol small-12 dmSectionNoParallax medium-12 large-12" id="1715995284" data-gallery-bg="eyJzbGlkZXMiOlsiaHR0cHM6Ly9saXJwLmNkbi13ZWJzaXRlLmNvbS9tZC91bnNwbGFzaC9kbXMzcmVwL211bHRpL29wdC9waG90by0xNTAyMTIwNDkyNjA2LWZiYTEzY2M2MzcyMS0xOTIwdy5qcGciXX0="> <div class="u_1803440521 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1803440521" editablewidget="true"><img src="./img10_files/FOTO+PARA+LA+WEB-960w.png" id="1482393099" class="" data-dm-image-path="https://irp-cdn.multiscreensite.com/91e4550b/dms3rep/multi/FOTO+PARA+LA+WEB.png" onerror="handleImageLoadError(this)" height="679.75" width="651.0"></div> 
+ <h2 class="u_1681907021 dmNewParagraph" data-element-type="paragraph" id="1681907021" data-styletopreserve="{" background-image":""}"=""> <div><br></div> 
+ <div><br></div> 
+ <div>LIBERE SU IMAGINACIÓN COMO NUNCA ANTES</div> 
+</h2> <div class="u_1522085955 dmNewParagraph" id="1522085955"> <div style="text-align: center;"><br></div> 
+ <div><b>Nos encargamos de&nbsp; crear entornos que son receptivos, adaptables, acogedores y emocionantes. Creemos que la arquitectura y los entornos están profundamente conectados, y que cada uno tiene influencia y efecto sobre el otro. Somos innovadores y ágiles. Somos modernos y tenemos valores tradicionales de estética. Cada miembro de nuestro equipo viene con un conjunto único de habilidades y nuestros diseños&nbsp; se destacan del resto al tiempo que encajan armoniosamente.</b></div> 
+ <div><br></div> 
+</div></div> 
+</div> 
+</div> 
+ <div class="u_1126271350 dmRespRow fullBleedChanged fullBleedMode" style="text-align: center;" id="1126271350"> <div class="dmRespColsWrapper" id="1779530941"> <div class="dmRespCol small-12 medium-6 large-6 dmSectionNoParallax u_1019583280" id="1019583280" data-gallery-bg="eyJzbGlkZXMiOlsiaHR0cHM6Ly9saXJwLmNkbi13ZWJzaXRlLmNvbS9tZC9kbWlwL2RtczNyZXAvbXVsdGkvb3B0L2hvbWUtZGVjb3ItZGl5LTE5MjB3LmpwZyJdfQ=="> <div data-element-type="spacer" class="u_1757418509 dmSpacer" id="1757418509"></div> 
+</div> 
+ <div class="dmRespCol small-12 medium-6 large-6 u_1183537987" id="1183537987"> <h2 class="u_1545278667 dmNewParagraph" id="1545278667" style="transition: opacity 1s ease-in-out; display: block;" data-element-type="paragraph">Nuestra Filosofía</h2> <div class="u_1063743879 dmNewParagraph" id="1063743879" style="transition: none 0s ease 0s; display: block;"> <div><b>Hacemos&nbsp; de la arquitectura un medio a su alcance, haciendo cada proyecto por pequeño que sea con entusiasmo, siempre&nbsp; buscando&nbsp; informarnos sobre nuevos productos, materiales , herramientas y las últimas tecnologías de diseno y construcción transofrmando la realidad hasta lograr su objetivo.</b></div> 
+</div></div> 
+</div> 
+</div> 
+ <div class="u_1551442614 dmRespRow" style="text-align: center;" id="1551442614"> <div class="dmRespColsWrapper" id="1579689432"> <div class="u_1083050687 dmRespCol small-12 medium-3 large-3" id="1083050687"> <div class="u_1158811413 graphicWidget" data-widget-type="graphic" id="1158811413" data-element-type="graphic"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="1286134016" class="svg u_1286134016" data-icon-name="li_bulb" data-hover-effect="reverse-grayscale"> <g id="1576410939"> <path d="M45.3,14.4c-13.3,0-24.1,10.8-24.1,24.1c0,8.3,4.4,16.1,11.5,20.5V73c0,7,5.7,12.6,12.6,12.6c7,0,12.6-5.7,12.6-12.6V59
+		c7.1-4.4,11.5-12.2,11.5-20.5C69.4,25.2,58.6,14.4,45.3,14.4z M45.3,83.3C39.6,83.3,35,78.7,35,73v-4.5h20.7V73
+		C55.6,78.7,51,83.3,45.3,83.3z M56.2,57.4l-0.6,0.3v8.5H35v-8.5l-0.6-0.3c-6.7-3.9-10.9-11.1-10.9-18.9c0-12,9.8-21.8,21.8-21.8
+		c12,0,21.8,9.8,21.8,21.8C67.1,46.3,62.9,53.5,56.2,57.4z" id="1358137202"></path> 
+ <path d="M45.3,25.9c-7,0-12.6,5.7-12.6,12.6H35c0-5.7,4.6-10.3,10.3-10.3c5.7,0,10.3,4.6,10.3,10.3h2.3
+		C57.9,31.6,52.3,25.9,45.3,25.9z" id="1015641975"></path> 
+</g> 
+</svg> 
+</div> 
+ <h3 class="u_1082814662 dmNewParagraph" id="1082814662" style="display: block;" data-element-type="paragraph"><div style="text-align: left;"><font><span class="font-size-17 lh-1" style=""><b style="">Idea</b></span></font></div></h3> <div class="u_1114634567 dmNewParagraph" id="1114634567" style="transition: opacity 1s ease-in-out; display: block;"><div style="text-align: left;"><span style="color: rgb(148, 148, 148);"><b>Traemos ideas a la vida. Ese es nuestro objetivo y nuestra visión, por lo que hacemos todo lo posible para imaginar profundamente su idea.</b></span><br></div></div></div> 
+ <div class="u_1171166336 dmRespCol small-12 medium-3 large-3" id="1171166336"> <div class="u_1512268151 graphicWidget" data-widget-type="graphic" id="1512268151" data-element-type="graphic"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="1018591614" class="svg u_1018591614" data-icon-name="education_pen_pencil" data-hover-effect="grayscale"> <title id="1965984638">new_icons-2</title> 
+ <rect x="24.4" y="69.55" width="5.39" height="1.15" transform="translate(-44.78 92.18) rotate(-85.93)" id="1157359532"></rect> 
+ <rect x="70.47" y="18.99" width="1.54" height="20.9" transform="translate(-0.33 58.07) rotate(-44.26)" id="1128914671"></rect> 
+ <rect x="18.22" y="46.23" width="58.63" height="1.54" transform="translate(-19.31 47.7) rotate(-45.28)" id="1886439271"></rect> 
+ <rect x="23.56" y="51.42" width="57.54" height="1.54" transform="translate(-21.57 51.93) rotate(-44.72)" id="1439617824"></rect> 
+ <path d="M83.42,19.89l-2.63-2.63a9.42,9.42,0,0,0-13.3,0L17.21,66.38c-.53.53.6,1,.81.81L68.3,18.07a8.28,8.28,0,0,1,11.67,0l2.63,2.63a8.28,8.28,0,0,1,0,11.67L33.33,80.5c0,.47.28,1.35.68,1L83.42,33.19A9.41,9.41,0,0,0,83.42,19.89Z" id="1962103272"></path> 
+ <path d="M33.81,81.74l-.13,0c-.46-.17-.54-1.2-.54-1.21v-.09L82.47,32.24a8.09,8.09,0,0,0,0-11.4L79.84,18.2a8.09,8.09,0,0,0-11.4,0L18.16,67.33c-.24.24-.83,0-1.08-.23a.62.62,0,0,1-.2-.39.58.58,0,0,1,.2-.46L67.35,17.12a9.61,9.61,0,0,1,13.57,0l2.63,2.63a9.61,9.61,0,0,1,0,13.57L34.14,81.59A.46.46,0,0,1,33.81,81.74Zm-.28-1.17a1.35,1.35,0,0,0,.28.79l.06,0L83.29,33a9.22,9.22,0,0,0,0-13l-2.63-2.63a9.22,9.22,0,0,0-13,0L17.35,66.51c-.12.12-.09.19,0,.25a.77.77,0,0,0,.61.28L68.17,17.93a8.47,8.47,0,0,1,11.94,0l2.63,2.63a8.47,8.47,0,0,1,0,11.94Z" id="1729927516"></path> 
+ <rect x="22.11" y="62.44" width="1.15" height="9.24" transform="translate(-46.03 84.09) rotate(-85.24)" id="1656443015"></rect> 
+ <rect x="32.34" y="71.93" width="1.15" height="8.81" transform="translate(-16.83 9.73) rotate(-13.43)" id="1923368070"></rect> 
+ <rect x="26.52" y="71.66" width="5.76" height="1.15" id="1669510135"></rect> 
+ <polygon points="12.53 87.27 16.93 66.55 18.45 66.8 14.41 85.23 33.63 80.13 33.99 81.62 12.53 87.27" id="1174638719"></polygon> 
+ <rect x="17.69" y="77.87" width="1.15" height="6.79" transform="translate(-53.83 39.57) rotate(-47.29)" id="1613709895"></rect> 
+ <path d="M14.78,23.44a3.85,3.85,0,0,1-.28-5.4l3.31-3,.05-.05a3.85,3.85,0,0,1,5.43-.24L48.67,36.91a1.87,1.87,0,0,1,.79-1.35l-25.13-22a5.38,5.38,0,0,0-7.56.33l-3.31,3-.05.05a5.39,5.39,0,0,0,.32,7.56L35.39,49.79A1.71,1.71,0,0,1,36.7,49L14.85,23.5Z" id="1424646591"></path> 
+ <path d="M72.7,55.86l-6.81-5.95a1.71,1.71,0,0,1-1.16,1l7,6.07a3.84,3.84,0,0,1,.27,5.41L62.1,71.93l0,0a3.85,3.85,0,0,1-5.39.29l-6.49-7.56a2,2,0,0,1-.7,1.54l6.05,7.05.07.07a5.33,5.33,0,0,0,3.61,1.39h.26A5.33,5.33,0,0,0,63.18,73L73,63.49l0,0A5.38,5.38,0,0,0,72.7,55.86Z" id="1923029245"></path> 
+ <path d="M79.88,87.79c-12-.3-13.93-9.14-14.95-13.89a8.65,8.65,0,0,0-.82-2.74l.83-1.29c.81.52,1.09,1.79,1.5,3.71,1,4.64,2.66,12.41,13.46,12.68,1.7,0,5-.22,6.45-.33-.12-1.45-.35-4.59-.34-6.36-.23-10.79-8-12.48-12.62-13.5-1.92-.42-3.19-.7-3.7-1.51l1.3-.82h0a8.65,8.65,0,0,0,2.73.83c4.75,1,13.58,3,13.83,15,0,2.26.39,7,.4,7l.07.77-.77.06C87,87.42,82.18,87.79,79.88,87.79Z" id="1794454256"></path> 
+</svg> 
+</div> 
+ <h3 class="u_1531945420 dmNewParagraph" id="1531945420" style="display: block;" data-element-type="paragraph"><div style="text-align: left;"><font><span class="font-size-17 lh-1" style=""><b style="">Diseño</b></span></font></div></h3> <div class="u_1027826163 dmNewParagraph" id="1027826163" style="transition: opacity 1s ease-in-out; display: block;"><div style="text-align: left;"><font style="color: rgb(148, 148, 148);"><b>Nuestro proceso de diseño se adapta a sus necesidades,involucra varias etapas,desde bocetos iniciales y modelado en 2D y 3D</b></font></div></div></div> 
+ <div class="u_1138695266 dmRespCol small-12 medium-3 large-3" id="1138695266"> <div class="u_1177177766 graphicWidget" data-widget-type="graphic" id="1177177766" data-element-type="graphic"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="1236619351" class="svg u_1236619351" data-icon-name="education_triangle_ruler" data-hover-effect="grayscale"> <title id="1041807194">new_icons-2</title> 
+ <path d="M86.76,87.28H13.24V12.72ZM14.5,86H83.75L14.5,15.79Z" id="1608554097"></path> 
+ <path d="M58.38,74.42H25.85v-33ZM27.11,73.16H55.37L27.11,44.5Z" id="1706103709"></path> 
+ <path d="M21.18,33.43H13.87a.5.5,0,1,1,0-1h7.32a.5.5,0,0,1,0,1Z" id="1191539661"></path> 
+ <path d="M17.53,23.51H13.71a.38.38,0,0,1,0-.76h3.82a.38.38,0,0,1,0,.76Z" id="1472001716"></path> 
+ <path d="M17.53,28.81H13.71a.38.38,0,0,1,0-.76h3.82a.38.38,0,0,1,0,.76Z" id="1134024656"></path> 
+ <path d="M17.53,38.4H13.71a.38.38,0,0,1,0-.76h3.82a.38.38,0,1,1,0,.76Z" id="1433536253"></path> 
+ <path d="M17.53,43.69H13.71a.38.38,0,0,1,0-.76h3.82a.38.38,0,1,1,0,.76Z" id="1519401669"></path> 
+ <path d="M17.53,49.49H13.71a.38.38,0,0,1,0-.76h3.82a.38.38,0,0,1,0,.76Z" id="1631135070"></path> 
+ <path d="M17.53,54.79H13.71a.38.38,0,1,1,0-.76h3.82a.38.38,0,0,1,0,.76Z" id="1897715629"></path> 
+ <path d="M18,64.12H14.21a.38.38,0,1,1,0-.76H18a.38.38,0,1,1,0,.76Z" id="1390393655"></path> 
+ <path d="M18,69.42H14.21a.38.38,0,0,1,0-.76H18a.38.38,0,1,1,0,.76Z" id="1729817379"></path> 
+ <path d="M18,75.22H14.21a.38.38,0,0,1,0-.76H18a.38.38,0,0,1,0,.76Z" id="1543479287"></path> 
+ <path d="M18,80.52H14.21a.38.38,0,0,1,0-.76H18a.38.38,0,1,1,0,.76Z" id="1725136788"></path> 
+ <path d="M20,86.59h0a.38.38,0,0,1-.38-.38V82.39A.38.38,0,0,1,20,82h0a.38.38,0,0,1,.38.38v3.82A.38.38,0,0,1,20,86.59Z" id="1954486345"></path> 
+ <path d="M25.33,86.59h0a.38.38,0,0,1-.38-.38V82.39a.38.38,0,0,1,.38-.38h0a.38.38,0,0,1,.38.38v3.82A.38.38,0,0,1,25.33,86.59Z" id="1296186978"></path> 
+ <path d="M31.13,86.59h0a.38.38,0,0,1-.38-.38V82.39a.38.38,0,0,1,.38-.38h0a.38.38,0,0,1,.38.38v3.82A.38.38,0,0,1,31.13,86.59Z" id="1332478885"></path> 
+ <path d="M36.43,86.59h0a.38.38,0,0,1-.38-.38V82.39a.38.38,0,0,1,.38-.38h0a.38.38,0,0,1,.38.38v3.82A.38.38,0,0,1,36.43,86.59Z" id="1434511104"></path> 
+ <path d="M45.76,86.59h0a.38.38,0,0,1-.38-.38V82.39a.38.38,0,0,1,.38-.38h0a.38.38,0,0,1,.38.38v3.82A.38.38,0,0,1,45.76,86.59Z" id="1510453423"></path> 
+ <path d="M51.06,86.59h0a.38.38,0,0,1-.38-.38V82.39a.38.38,0,0,1,.38-.38h0a.38.38,0,0,1,.38.38v3.82A.38.38,0,0,1,51.06,86.59Z" id="1213424337"></path> 
+ <path d="M56.86,86.59h0a.38.38,0,0,1-.38-.38V82.39a.38.38,0,0,1,.38-.38h0a.38.38,0,0,1,.38.38v3.82A.38.38,0,0,1,56.86,86.59Z" id="1145475128"></path> 
+ <path d="M62.15,86.59h0a.38.38,0,0,1-.38-.38V82.39a.38.38,0,0,1,.38-.38h0a.38.38,0,0,1,.38.38v3.82A.38.38,0,0,1,62.15,86.59Z" id="1301622846"></path> 
+ <path d="M21.06,59.79H13.74a.5.5,0,0,1,0-1h7.32a.5.5,0,0,1,0,1Z" id="1696424452"></path> 
+ <path d="M40.73,87a.5.5,0,0,1-.5-.5V79.21a.5.5,0,0,1,1,0v7.32A.5.5,0,0,1,40.73,87Z" id="1515241367"></path> 
+ <path d="M67.47,87a.5.5,0,0,1-.5-.5V79.21a.5.5,0,0,1,1,0v7.32A.5.5,0,0,1,67.47,87Z" id="1036367449"></path> 
+</svg> 
+</div> 
+ <h3 class="u_1920898717 dmNewParagraph" id="1920898717" style="display: block;" data-element-type="paragraph"><div style="text-align: left;"><font><span class="font-size-17 lh-1" style=""><b style="">Precisión</b></span></font></div></h3> <div class="u_1158263767 dmNewParagraph" id="1158263767" style="transition: opacity 1s ease-in-out; display: block;"><div style="text-align: left;"><font color="#949494"><b>Usted lo necesita y nostros nos ocupamos de hacer realidad sus sueños</b></font></div><div style="text-align: left;"><font style="color: rgb(148, 148, 148);"><br></font></div><div style="text-align: left;"><font style="color: rgb(148, 148, 148);"><br></font></div></div></div> 
+ <div class="u_1627857253 dmRespCol small-12 medium-3 large-3" id="1627857253"> <div class="u_1995571377 graphicWidget" data-widget-type="graphic" id="1995571377" data-element-type="graphic"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="1776616932" class="svg u_1776616932" data-icon-name="li-target" data-hover-effect="grayscale"> <path d="M74.6,39.7l15-15H75.3V10.5l-15,15V38l-6.1,6c-4.7-4.2-10.8-6.8-17.6-6.8c-14.4,0-26.2,11.7-26.2,26.2
+	c0,14.4,11.7,26.2,26.2,26.2s26.2-11.7,26.2-26.2c0-6.8-2.6-12.9-6.8-17.6l6.1-6.1C62.1,39.7,74.6,39.7,74.6,39.7z M83.5,27.2
+	l-10,10h-8.9l10-10H83.5z M62.8,26.5l10-10v8.9l-10,10C62.8,35.4,62.8,26.5,62.8,26.5z M60.3,63.3C60.3,76.4,49.7,87,36.7,87
+	C23.6,87,13,76.4,13,63.3s10.6-23.7,23.7-23.7c6.1,0,11.6,2.3,15.8,6.1l-7,7c-2.4-2-5.4-3.2-8.8-3.2c-7.6,0-13.7,6.1-13.7,13.7
+	s6.2,13.7,13.7,13.7s13.7-6.2,13.7-13.7c0-3.3-1.2-6.4-3.2-8.8l7-7C58,51.7,60.3,57.3,60.3,63.3z M37.3,61c-0.2-0.1-0.4-0.1-0.6-0.1
+	c-1.4,0-2.5,1.1-2.5,2.5s1.1,2.5,2.5,2.5s2.5-1.1,2.5-2.5c0-0.2-0.1-0.4-0.1-0.6l6.4-6.4c1.5,1.9,2.5,4.3,2.5,7
+	c0,6.2-5,11.2-11.2,11.2s-11.2-5-11.2-11.2s5-11.2,11.2-11.2c2.6,0,5,1,7,2.5L37.3,61z" id="1680660285"></path> 
+</svg> 
+</div> 
+ <h3 class="u_1842811005 dmNewParagraph" id="1842811005" style="display: block;" data-element-type="paragraph"><div style="text-align: left;"><font><span class="font-size-17 lh-1" style=""><b style="">Satisfación</b></span></font></div></h3> <div class="u_1994853934 dmNewParagraph" id="1994853934" style="transition: none; display: block;"><div style="text-align: left;"><span style="color: rgb(148, 148, 148);"><b>Su opinión y satisfacción son importantes en todo el proceso. Desde la primera línea dibujada, hasta la última.</b></span><br></div></div></div> 
+</div> 
+</div> 
+ <div class="u_1608644577 dmRespRow fullBleedChanged fullBleedMode" style="text-align: center;" id="1608644577"> <div class="dmRespColsWrapper" id="1168802758"> <div class="dmRespCol small-12 u_1432652653 hasBackgroundOverlay medium-6 large-6 empty-column" id="1432652653"></div> 
+ <div class="dmRespCol small-12 u_1381885977 hasBackgroundOverlay medium-6 large-6 empty-column" id="1381885977"></div> 
+</div> 
+</div> 
+ <div class="u_1306895925 dmRespRow fullBleedChanged fullBleedMode" style="text-align: center;" id="1306895925"> <div class="dmRespColsWrapper" id="1620221213"> <div class="dmRespCol small-12 u_1481397729 hasBackgroundOverlay medium-6 large-6 empty-column" id="1481397729"></div> 
+ <div class="dmRespCol small-12 u_1442294328 hasBackgroundOverlay medium-6 large-6 empty-column" id="1442294328"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="sticky-widgets-container-global" id="1763027572"></div> 
+ <div class="dmFooterContainer"> <div id="fcontainer" class="u_fcontainer f_hcontainer dmFooter p_hfcontainer"> <div dm:templateorder="250" class="dmFooterResp generalFooter" id="1943048428"> <div class="u_1725049324 dmRespRow" style="text-align: center;" id="1725049324"> <div class="dmRespColsWrapper" id="1358086068"> <div class="u_1848182343 dmRespCol small-12 large-4 medium-4" id="1848182343"> <div class="u_1128485146 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1128485146" editablewidget="true"><img src="./img10_files/IU2-320w.jpg" id="1986939616" class="" data-dm-image-path="https://irp-cdn.multiscreensite.com/91e4550b/dms3rep/multi/IU2.jpg" data-hover-effect="zoomout" onerror="handleImageLoadError(this)" height="49.65625" width="125.0"></div> 
+ <h5 class="u_1100705261 dmNewParagraph" id="1100705261" data-element-type="paragraph" style="transition: none; display: block;"><div style="text-align: left;"><font><span style="font-weight: 300;">Somos profesionales con más de 20 de&nbsp;</span></font></div><div style="text-align: left;"><font><span style="font-weight: 300;">años de experiencia en nuestro campo</span></font></div></h5></div> 
+ <div class="u_1276543962 dmRespCol small-12 large-3 medium-3" id="1276543962"> <h4 class="u_1914898386 dmNewParagraph" id="1914898386" data-element-type="paragraph"><div style=""><span style=""><font style="color: rgb(255, 255, 255);"><b><span style="font-weight: 700;">VISITÁNOS</span></b></font></span></div></h4> <h5 class="u_1776110877 dmNewParagraph" id="1776110877" data-element-type="paragraph" style="transition: none; display: block;"><div style="text-align: left;"><span style="color: rgb(255, 255, 255); background-color: transparent;"></span></div><span style="font-weight: 300;"><div style="text-align: left;">Santo Domingo</div><div style="text-align: left;"><span style="font-weight: inherit;">Republica Dominicana, 10100</span></div></span><div style="text-align: left;"><span style="color: rgb(255, 255, 255);"></span></div></h5></div> 
+ <div class="u_1830246780 dmRespCol small-12 large-3 medium-3" id="1830246780"> <h4 class="u_1112815771 dmNewParagraph" id="1112815771" data-element-type="paragraph"><div style=""><span style=""><font style="color: rgb(255, 255, 255);"><b><span style="font-weight: 700;">CONTACTO</span></b></font></span></div></h4> <h5 class="u_1481728146 dmNewParagraph" id="1481728146" style="display: block;" data-element-type="paragraph"><div style="text-align: left;"><span style="">+1 829 788 3032</span></div><div style="text-align: left;">servarqrd@gmail.com</div></h5> <a class="default dmDefaultGradient align-center u_1227688744 dmCall voipReplacement dmWidget dmNoMark dmWwr" contenteditable="false" onclick=";return dm_gaq_push_event(&#39;ClickToCall&#39;, &#39;Call&#39;,null,&#39;91e4550b&#39;, this);" id="1227688744" dmle_extension="clicktocall" data-element-type="clicktocall" wr="true" data-display-type="block" icon="true" surround="true" description="Llamanos" adwords="" icon-name="icon-phone" phone="+1 809 788 3032" text="" image="" target="_blank"> <span class="iconBg" aria-hidden="true"> <span class="icon hasFontIcon icon-phone"></span> 
+</span> 
+ <span class="text">Llamanos</span> 
+<span class="text phoneNumHolder">+1 809 788 3032</span></a> 
+</div> 
+ <div class="u_1233943780 dmRespCol small-12 large-2 medium-2" id="1233943780"> <h4 class="u_1053405065 dmNewParagraph" id="1053405065" data-element-type="paragraph"><div style=""><span style=""><b><span style="font-weight: 700;"><font style="color: rgb(255, 255, 255);">CONNECT</font></span></b></span></div></h4> <div class="u_1531299188 align-center text-align-center dmSocialHub" id="1531299188" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="https://web.whatsapp.com/send?phone=+%201%20829%20788%203032" target="_blank" dm_dont_rewrite_url="true" aria-label="whatsapp" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&#39;socialLink&#39;, &#39;click&#39;, &#39;Whatsapp&#39;)"> <span class="dmSocialWhatsapp dm-social-icons-whatsapp oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="http://instagram.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="instagram" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&#39;socialLink&#39;, &#39;click&#39;, &#39;Instagram&#39;)"> <span class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="mailto:sevarqrd@gmail.com" dm_dont_rewrite_url="true" aria-label="email" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&#39;socialLink&#39;, &#39;click&#39;, &#39;Email&#39;)" target="_blank"> <span class="dmSocialEmail dm-social-icons-email oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="http://pinterest.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="pinterest" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&#39;socialLink&#39;, &#39;click&#39;, &#39;Pinterest&#39;)"> <span class="dmSocialPinterest icon-pinterest oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="https://facebook.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="facebook" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&#39;socialLink&#39;, &#39;click&#39;, &#39;Facebook&#39;)"> <span class="dmSocialFacebook dm-social-icons-facebook oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div id="1236746004" dmle_extension="powered_by" data-element-type="powered_by" icon="true" surround="false"></div> 
+</div> 
+</div> 
+</div> 
+ <div class="layout-drawer-hamburger hamburger-on-header" id="layout-drawer-hamburger" role="button" aria-label="menu opener" tabindex="0"> <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+ <span class="hamburger__slice"></span> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+    </div>
+</div>
+<!--  Add full CSS and Javascript before the close tag of the body if needed -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Google Fonts Include -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- loadCSS function -->
+<script>
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+
+  function checkCss() {
+    if (cssLinks && cssLinks.runtime && cssLinks.global) {
+      loadCssLink(cssLinks.runtime);
+      loadCssLink(cssLinks.global);
+      cssLinks = null;
+    }
+  }
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      /* Never fail - this is just a tool for measurements */
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+<link rel="stylesheet" href="./img10_files/css" as="style" fetchpriority="low" onload="loadCSS(this)" type="text/css">
+
+
+
+
+<!-- RT CSS Include d-css-runtime-desktop-one-package-new-->
+<link rel="stylesheet" as="style" fetchpriority="low" onload="loadCSS(this)" href="./img10_files/d-css-runtime-desktop-one-package-new.min.css" type="text/css">
+
+<!-- End of RT CSS Include -->
+
+
+
+    
+       <link rel="stylesheet" href="./img10_files/b7335f05cb21992245d201920748f56d.css" id="widgetCSS" as="style" fetchpriority="low" onload="loadCSS(this)" type="text/css">
+    
+
+
+<!-- Support `img` size attributes -->
+<style>img[width][height] {height: auto;}</style>
+
+<!-- Support showing sticky element on page only -->
+<style>
+    body[data-page-alias="home"] #dm [data-show-on-page-only="home"]{
+        display: block !important;
+    }
+</style>
+
+<!-- This is populated in Ajax navigation -->
+<style id="pageAdditionalWidgetsCss" type="text/css">
+</style>
+
+
+
+
+<!-- Site CSS -->
+<link rel="stylesheet" href="./img10_files/91e4550b_1.min.css" id="siteGlobalCss" as="style" fetchpriority="low" onload="loadCSS(this)" type="text/css">
+
+
+
+<style id="customWidgetStyle" type="text/css">
+    
+</style>
+<style id="innerPagesStyle" type="text/css">
+    
+</style>
+
+<style id="additionalGlobalCss" type="text/css">
+</style>
+
+<!-- Page CSS -->
+<link rel="stylesheet" href="./img10_files/91e4550b_home_1.min.css" id="homeCssLink" as="style" fetchpriority="low" onload="loadCSS(this)" type="text/css">
+
+<style id="pagestyle" type="text/css">
+    
+</style>
+
+<style id="pagestyleDevice" type="text/css">
+    
+</style>
+
+<!-- Flex Sections CSS -->
+
+
+
+
+
+    <style id="globalFontSizeStyle" type="text/css">
+        .font-size-22, .size-22, .size-22 > font { font-size: 22px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-36, .size-36, .size-36 > font { font-size: 36px !important; }.font-size-60, .size-60, .size-60 > font { font-size: 60px !important; }.font-size-36, .size-36, .size-36 > font { font-size: 36px !important; }.font-size-60, .size-60, .size-60 > font { font-size: 60px !important; }.font-size-30, .size-30, .size-30 > font { font-size: 30px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-17, .size-17, .size-17 > font { font-size: 17px !important; }.font-size-17, .size-17, .size-17 > font { font-size: 17px !important; }.font-size-17, .size-17, .size-17 > font { font-size: 17px !important; }.font-size-17, .size-17, .size-17 > font { font-size: 17px !important; }
+    </style>
+    <style id="pageFontSizeStyle" type="text/css">
+    </style>
+
+<!-- ========= JS Section ========= -->
+
+<script>
+    var isWLR = true;
+
+    window.customWidgetsFunctions = {};
+    window.customWidgetsStrings = {};
+    window.collections = {};
+    window.currentLanguage = "SPANISH"
+    window.isSitePreview = false;
+</script>
+<script type="text/javascript">
+
+    var d_version = "18..11";
+    var build = "2022-11-09T17_11_45";
+    window['v'+'ersion'] = d_version;
+
+    function buildEditorParent() {
+        window.isMultiScreen = true;
+        window.editorParent = {};
+        window.previewParent = {};
+        window.assetsCacheQueryParam = "?version=2022-11-09T17_11_45";
+        try {
+            var _p = window.parent;
+            if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                window.editorParent = _p;
+            }
+            else if (_p.isSitePreview) {
+                window.previewParent = _p;
+            }
+        } catch (e) {
+
+        }
+    }
+
+    buildEditorParent();
+
+
+</script>
+<!-- Load jQuery -->
+<script type="text/javascript" src="./img10_files/jquery-3.6.0.min.js.descarga"></script>
+<!-- End Load jQuery -->
+
+<!-- Injecting site-wide before scripts -->
+<!-- End Injecting site-wide to the head -->
+
+
+<script>
+    var _jquery = window.$;
+
+    var jqueryAliases = ['$', 'jquery', 'jQuery'];
+
+    jqueryAliases.forEach((alias) => {
+        Object.defineProperty(window, alias, {
+            get() {
+                return _jquery;
+            },
+            set() {
+                console.warn("Trying to over-write the global jquery object!");
+            }
+        });
+    });
+
+</script>
+<script>
+    window.cookiesNotificationMarkupPreview = 'null';
+</script>
+
+<!-- HEAD RT JS Include -->
+<script>
+    window.INSITE = window.INSITE || {};
+    window.INSITE.device = "desktop";
+    window.rtCommonProps = {};
+    rtCommonProps["rt.ajax.ajaxScriptsFix"] =true;
+    rtCommonProps["rt.pushnotifs.sslframe.encoded"] = 'aHR0cHM6Ly97c3ViZG9tYWlufS5wdXNoLW5vdGlmcy5jb20=';
+    rtCommonProps["runtimecollector.url"] = 'https://rtc.multiscreensite.com';
+    rtCommonProps["facebook.accessToken"] = '126515034112906|8vv7JhnEegS8qz43fIOZjxGZReA';
+    rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+    rtCommonProps["feature.flag.contactUsNewForm"] = 'true';
+    rtCommonProps["inlineEditGrid.snap"] =true;
+    rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+    rtCommonProps["rt.pushnotifs.force.button"] =true;
+    rtCommonProps["google.places.key"] = 'AIzaSyBAwUOqPUB1CU31yDztoZYaUE7sPv4ktEI';
+    rtCommonProps["common.mapbox.token"] = 'pk.eyJ1IjoiZGFubnliMTIzIiwiYSI6ImNqMGljZ256dzAwMDAycXBkdWxwbDgzeXYifQ.Ck5P-0NKPVKAZ6SH98gxxw';
+    rtCommonProps["common.mapbox.js.override"] =false;
+    rtCommonProps["common.opencage.token"] = '319e14f32bcce967ba55cd263478796d';
+    rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+    rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+    rtCommonProps["isCoverage.test"] =false;
+    rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+    rtCommonProps["feature.flag.mappy.kml"] =false;
+    rtCommonProps["common.resources.dist.cdn"]=true;
+    rtCommonProps["common.build.dist.folder"]='production/2978';
+    rtCommonProps["common.resources.cdn.host"]='https://static.cdn-website.com';
+    rtCommonProps["common.resources.folder"]='https://static.cdn-website.com/mnlt/production/2978';
+    rtCommonProps["import.images.storage.useImageCDN"]=true;
+    rtCommonProps["feature.flag.runtime.backgroundSlider.preload.slowly"]=true;
+    rtCommonProps["feature.flag.runtime.photoswipe.fix"]=true;
+    rtCommonProps["feature.flag.runtime.newAnimation.enabled"]=true;
+    rtCommonProps["feature.flag.runtime.newAnimation.respectCssAnimationProps.enabled"]=true;
+    rtCommonProps["feature.flag.runtime.newAnimation.jitAnimation.enabled"]=true;
+    rtCommonProps["feature.flag.sites.google.analytics.gtag"]=true;
+    rtCommonProps["feature.flag.runOnReadyNewTask"]=true;
+    rtCommonProps["feature.flag.addTargetBlankToExternalLinks"]=true;
+    rtCommonProps["unsuspendEcwidStoreOnRuntime.enabled"]=true;
+
+    
+    rtCommonProps['common.mapsProvider'] = 'mapbox';
+    rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+    rtCommonProps['common.geocodeProvider'] = 'here';
+    rtCommonProps['common.map.defaults.radiusSize'] = '1500';
+    rtCommonProps['common.map.defaults.radiusBg'] = 'rgba(255, 255, 255, 0.4)';
+    rtCommonProps['common.map.defaults.strokeColor'] = 'rgba(255, 255, 255, 1)';
+    rtCommonProps['common.map.defaults.strokeSize'] = '2';
+    rtCommonProps['server.for.resources'] = '';
+    rtCommonProps['feature.flag.lazy.widgets'] = true;
+    rtCommonProps['editor.infra.noPrefixedChanges'] = true;
+    rtCommonProps['feature.flag.single.wow'] = false;
+    rtCommonProps['feature.flag.disallowPopupsInEditor'] = true;
+    rtCommonProps['feature.flag.mark.anchors'] = true;
+    rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+    rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+    rtCommonProps["images.sizes.small"] =160;
+    rtCommonProps["images.sizes.mobile"] =640;
+    rtCommonProps["images.sizes.tablet"] =1280;
+    rtCommonProps["images.sizes.desktop"] =1920;
+    rtCommonProps["modules.resources.cdn"] =true;
+    rtCommonProps["import.images.storage.imageCDN"] = 'https://lirp.cdn-website.com/';
+    rtCommonProps["facebook.api.version"] = '7.0';
+    rtCommonProps["runtime.save.restore.function.bind"] =true;
+    rtCommonProps["feature.flag.photo.gallery.exact.size"] =false;
+    rtCommonProps["feature.flag.photo.gallery.lazy"] =true;
+    rtCommonProps["new.store.fix.ecwid.back.bug"] =true;
+    rtCommonProps["new.store.accountPage.ecwid.signIn.fix"] =true;
+    rtCommonProps["fix.ecwid.sign.in.page.with.return.url"] =true;
+    rtCommonProps["site.runtime.video.background.ssr"] =true;
+    rtCommonProps["geocode.search.localize"] =false; 
+    rtCommonProps["facebook.runtime.widgets.upgrade"] =true;
+    rtCommonProps["feature.flag.runtime.inp.threshold"] =150;
+    rtCommonProps["feature.flag.runtime.newAnimation.asyncInit.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.asyncInit.setTimeout.enabled"] =false;
+    rtCommonProps["feature.flag.performance.logs"]=true;
+    rtCommonProps["site.contact.form.fix.for.attribute"]=true;
+    rtCommonProps["site.contact.form.html5.input"]=true;
+    rtCommonProps["site.widget.form.captcha.type"]='g_recaptcha';
+    rtCommonProps["friendly.captcha.site.key"] = 'FCMGSQG9GVNMFS8K';
+</script>
+<script src="./img10_files/d-js-one-runtime-unified-desktop.min.js.descarga"></script>
+<!-- End of HEAD RT JS Include -->
+<script src="./img10_files/d-js-jquery-migrate.min.js.descarga"></script>
+<script>jQuery.DM.updateWidthAndHeight();
+$(window).resize(function () {
+    
+});
+$(window).bind("orientationchange", function (e) {
+    $.layoutManager.initLayout();
+    
+});
+$(document).resize(function () {
+    
+});
+</script>
+
+<script type="text/javascript" id="d_track_campaign">
+(function() {
+ 	var campaign = (/utm_campaign=([^&]*)/).exec(window.location.search);
+
+ 	if (campaign && campaign != null && campaign.length > 1) {
+ 		campaign = campaign[1];
+ 		document.cookie = "_dm_rt_campaign=" + campaign + ";expires=" + new Date().getTime() + 24*60*60*1000 + ";domain=" + window.location.hostname + ";path=/";
+ 	}
+}());
+</script>
+<script type="text/javascript">
+  var _dm_gaq = {};
+  var _gaq = _gaq || [];
+  var _dm_insite = [];
+</script>
+
+  
+<script type="text/javascript" id="d_track_sp">
+;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+};p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//d32hwlnfiv2gyn.cloudfront.net/sp-2.0.0-dm-0.1.min.js","snowplow"));
+window.dmsnowplow  = window.snowplow;
+
+dmsnowplow('newTracker', 'cf', 'd32hwlnfiv2gyn.cloudfront.net', { // Initialise a tracker
+  appId: '91e4550b'
+});
+
+dmsnowplow('trackPageView')
+$.each(_dm_insite, function(idx, rule) {
+	//('trackStructEvent', 'category','action','label','property','value');
+			// Specifically in popup only the client knows if it is shown or not so we don't always want to track its impression here
+	        // the tracking is in popup.js
+			if (rule.actionName !== "popup") {
+                dmsnowplow('trackStructEvent', 'insite', 'impression', rule.ruleType, rule.ruleId);
+            }
+ 			$(document).ready(function(){
+ 				$.DM.events.trigger('event-ruleTriggered', {value: rule})}
+ 			);
+ 		});
+</script>
+   <div style="display:none;" id="P6iryBW0Wu"></div>
+
+<!-- photoswipe markup -->
+
+
+
+
+
+
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Cerrar (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Compartir"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Activar pantalla completa"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Acercar/alejar"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Anterior (flecha izquierda)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Siguiente (flecha derecha)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="fb-root" data-locale="es_ES"></div>
+<!-- Alias: 91e4550b -->
+<div class="dmPopupMask" id="dmPopupMask"></div>
+<div id="dmPopup" class="dmPopup">
+	<div class="dmPopupCloseWrapper"> <div class="dmPopupClose dm-common-icons-close oneIcon" onclick="dmHidePopup(event);"></div> </div>
+ 	<div class="dmPopupTitle"> <span></span> Share by:</div> 
+	<div class="data"></div>
+</div><script id="d_track_personalization">
+// Collects client data and updates cookies used by smart sites
+var expireDays = 365,visitLength = 30 * 60000;
+$.setCookie("dm_timezone_offset", (new Date()).getTimezoneOffset(), expireDays);
+function setSmartSiteCookies() {
+	setSmartSiteCookiesInternal("dm_this_page_view","dm_last_page_view","dm_total_visits","dm_last_visit");
+}
+$.DM.events.on("afterAjax", setSmartSiteCookies);
+setSmartSiteCookies();
+</script>
+<script type="text/javascript">
+    
+    Parameters.NavigationAreaParams.MoreButtonText = 'MORE';
+    
+    Parameters.NavigationAreaParams.LessButtonText = 'LESS';
+    Parameters.HomeLinkText = 'Home';
+    </script>
+
+<script>
+
+    jQuery(window).on('load', function () {
+        try {
+            jQuery.DM.updateIOSHeight();
+        } catch (e) {
+        }
+
+    });
+</script>
+<script>
+    dmAPI.loadScript(
+        window.rtCommonProps['common.resources.cdn.host'] + '/libs/lozad/1.15.0/lozad.min.js',
+        function () {
+            dmAPI.runOnReady('lozadInit', function () {
+                window.document.querySelectorAll('img.lazy').forEach(function (img) {
+                    img.addEventListener('load', function (event) {
+                        var img = event.target;
+                        img.style.filter = 'blur(0)';
+                        setTimeout(function () {
+                            $(img).closest('.imageWidget').addClass('lazyLoaded');
+                        }, 250)
+                    });
+                });
+                lozad('.lazy', {
+                    threshold: 0.1,
+                    loaded: function (element) {
+                        if (element.getAttribute('data-background-image')) {
+                            element.style.setProperty(
+                                'background-image',
+                                "url('" + element.getAttribute('data-background-image') + "')",
+                                "important"
+                            );
+                        }
+                    }
+                }).observe();
+            });
+        }
+    );
+</script>
+<!--  End Script tags -->
+
+<!--  Site Wide Html Markup -->
+<!--  Site Wide Html Markup -->
+
+
+</body></html>
